@@ -8,7 +8,7 @@ const About = () => {
         {/* Left Image */}
         <div className="about-image">
           <img
-            src="https://images.unsplash.com/photo-1617957743098-1c8c6c1f8e56"
+            src="images\evil eye mandala.jpg.jpeg"
             alt="Mandala Art"
           />
         </div>
