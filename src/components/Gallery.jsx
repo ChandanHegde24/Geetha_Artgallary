@@ -1,10 +1,10 @@
 import React from "react";
 
 const images = [
-  "https://images.unsplash.com/photo-1",
-  "https://images.unsplash.com/photo-2",
-  "https://images.unsplash.com/photo-3",
-  "https://images.unsplash.com/photo-4",
+  "images/IMG_20250213_113513.jpg.jpeg",
+  "images/IMG_20250213_113513.jpg.jpeg",
+  "images/IMG_20250213_113513.jpg.jpeg",
+  "images/IMG_20250213_113513.jpg.jpeg",
 ];
 
 export default function Gallery() {
