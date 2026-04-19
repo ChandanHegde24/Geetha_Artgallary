@@ -20,8 +20,6 @@ const products = [
     image: "/img/tabletopphotoframe.png",
   },
   {
-<<<<<<< HEAD
-=======
     name: "Wall Painting With House Name",
     price: "₹ 2,500.00",
     eta: "Customizable",
@@ -30,7 +28,6 @@ const products = [
     image: "images/wall painting with house name.jpg.jpeg",
   },
   {
->>>>>>> 6a2fba2bed389f5c88dd4134fdc723a21aff2a82
     name: "Tealight Holder (per pair)",
     price: "₹ 350.00",
     eta: "Ready to order",
