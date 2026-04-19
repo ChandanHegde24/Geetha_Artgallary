@@ -8,7 +8,7 @@ const products = [
     eta: "Ready to order",
     category: "Wall Painting",
     description: "Handmade mandala work that elevates your wall with mindful symmetry.",
-    image: "",
+    image: "images/mandala painting.jpg.jpeg",
   },
 
   {
@@ -20,6 +20,17 @@ const products = [
     image: "/img/tabletopphotoframe.png",
   },
   {
+<<<<<<< HEAD
+=======
+    name: "Wall Painting With House Name",
+    price: "₹ 2,500.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    description: "Personalized mandala painting featuring your home name and style.",
+    image: "images/wall painting with house name.jpg.jpeg",
+  },
+  {
+>>>>>>> 6a2fba2bed389f5c88dd4134fdc723a21aff2a82
     name: "Tealight Holder (per pair)",
     price: "₹ 350.00",
     eta: "Ready to order",
@@ -33,7 +44,7 @@ const products = [
     eta: "Ready to order",
     category: "Decor Items",
     description: "Photo frame with mirror accents to brighten compact spaces.",
-    image: "",
+    image: "images\table top photo frames.jpg.jpeg",
   },
   {
     name: "Table Top Photo Frame",
@@ -153,7 +164,7 @@ const products = [
     eta: "Size: 10*10 inch",
     category: "Wall Decor",
     description: "Elegant elephant-themed mandala composition with symbolic motifs.",
-    image: "",
+    image: "images/elephant mandala.jpg.jpeg",
   },
   {
     name: "Evil Eye Mandala",
@@ -161,7 +172,7 @@ const products = [
     eta: "Ready to order",
     category: "Wall Decor",
     description: "Protective evil-eye mandala artwork designed with vibrant contrasts.",
-    image: "",
+    image: "images/evil eye mandala.jpg.jpeg",
   },
   {
     name: "Om Mandala",
@@ -169,7 +180,7 @@ const products = [
     eta: "Size: 12*12 inch",
     category: "Wall Decor",
     description: "Sacred Om mandala piece ideal for meditation corners and pooja spaces.",
-    image: "",
+    image: "images/om mandala.jpg.jpeg",
   },
   {
     name: "Ganesh Mandala",
