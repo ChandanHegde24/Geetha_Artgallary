@@ -1,4 +1,5 @@
 import React from "react";
+import Shop from "./Shop";
 
 const reasons = [
   {
@@ -45,6 +46,30 @@ const testimonials = [
   {
     quote: "Geeta beautifully blends tradition with modern aesthetics. Her Mandalas are not just art but a spiritual experience.",
     name: "Maheshwari",
+  },
+];
+
+const popularPicksProducts = [
+  {
+    name: "Mandala Painting",
+    price: "₹ 1,500.00",
+    eta: "Ready to order",
+    category: "Wall Painting",
+    image: "",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Wall Painting With House Name",
+    price: "₹ 2,500.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "",
   },
 ];
 
@@ -102,6 +127,12 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <Shop
+        title="Popular Picks"
+        maxProducts={3}
+        productsData={popularPicksProducts}
+      />
     </>
   );
 }

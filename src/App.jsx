@@ -18,7 +18,6 @@ function App() {
           <>
             <Hero />
             <Home />
-            <Shop title="Popular Picks" />
           </>
         } />
         <Route path="/about" element={

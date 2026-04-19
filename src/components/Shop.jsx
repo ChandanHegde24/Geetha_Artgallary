@@ -10,6 +10,7 @@ const products = [
     description: "Handmade mandala work that elevates your wall with mindful symmetry.",
     image: "",
   },
+
   {
     name: "Table Top Photo Frame",
     price: "₹ 600.00",
@@ -17,14 +18,6 @@ const products = [
     category: "Decor Items",
     description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Wall Painting With House Name",
-    price: "₹ 2,500.00",
-    eta: "Customizable",
-    category: "Wall Painting",
-    description: "Personalized mandala painting featuring your home name and style.",
-    image: "",
   },
   {
     name: "Tealight Holder (per pair)",
@@ -41,6 +34,110 @@ const products = [
     category: "Decor Items",
     description: "Photo frame with mirror accents to brighten compact spaces.",
     image: "",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Decor Items",
+    description: "Decorative photo frame with artistic hand-painted detailing.",
+    image: "/img/tabletopphotoframe.png",
   },
   {
     name: "Resin Coated Earrings (Pair)",
@@ -80,16 +177,147 @@ const products = [
     eta: "Ready to order",
     category: "Gifting and Personal use",
     description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
-    image: "",
+    image: "/img/Ganesha madala.jpg",
   },
-  {
+   {
+    name: "Bookmarks",
+    price: "₹ 200.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/bookmarks.jpg",
+  },
+   {
+    name: "Door Side Hangings",
+    price: "₹ 1,500.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/door side hangings.jpg",
+  },
+   {
+    name: "Earrings (Per Pair)",
+    price: "₹ 125.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/earrings.jpg",
+  },
+   {
+    name: "Elephant Mandala",
+    price: "₹ 2,000.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/Elephant.jpg",
+  },
+   {
+    name: "Evil Eye Fridge Magnets",
+    price: "₹ 150.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/evil eye fridge magnets.jpg",
+  },
+   {
+    name: "Evil Eye Mandala",
+    price: "₹ 2,500.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/evil eye mandala.jpg",
+  },
+   {
+    name: "Key Holder",
+    price: "₹ 800.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/key holder.jpg",
+   
+  },
+   {
+    name: "Key Holder",
+    price: "₹ 800.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/key holder2.jpg",
+  },
+   {
     name: "Keychains",
     price: "₹ 125.00",
-    eta: "Size: 2inch*2inch*3mm",
+    eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Compact custom keychains with mandala flair for everyday use.",
-    image: "",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/key chains.jpg",
   },
+   {
+    name: "Magnets Photo Frames (per pc)",
+    price: "₹ 250.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/magnet photo frame.jpg",
+  },
+  {
+    name: "Mandala Painting",
+    price: "₹ 1,500.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/mandala painting.jpg",
+  },
+  {
+    name: "Pop Socket (per pc)",
+    price: "₹ 150.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/Pop Socket.jpg",
+  },
+  {
+    name: "Resin Coated Earrings (Pair)",
+    price: "₹ 125.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/Resin Coated Earrings.jpg",
+  },
+  {
+    name: "Table Top Photo Frame",
+    price: "₹ 600.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/tabletopphotoframe.png",
+  },
+  {
+    name: "Table Top Photo Frame With Mirror",
+    price: "₹ 850.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/tabletopphotoframemirror.jpg",
+  },
+  {
+    name: "Tealight Candle Holders (per pc)",
+    price: "₹ 175.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/tealight candle holders.jpg",
+  },
+  {
+    name: "Tealight Holder (per pair)",
+    price: "₹ 350.00",
+    eta: "Ready to order",
+    category: "Gifting and Personal use",
+    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
+    image: "/img/tealight holder.jpg",
+  },
+ 
+
   {
     name: "Handpainted Tray Set",
     price: "₹ 1,250.00",
@@ -122,15 +350,21 @@ export default function Shop({
   title = "Our Signature Collection",
   showFeaturedBadge = true,
   showCategories = false,
-  initialCategory = "All"
+  initialCategory = "All",
+  maxProducts,
+  productsData
 }) {
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [zoomImage, setZoomImage] = useState(null);
   const [zoomImageAlt, setZoomImageAlt] = useState("");
   const [zoomLevel, setZoomLevel] = useState(1);
+  const allProducts = Array.isArray(productsData) && productsData.length > 0 ? productsData : products;
   const filteredProducts = selectedCategory === "All"
-    ? products
-    : products.filter((product) => product.category === selectedCategory);
+    ? allProducts
+    : allProducts.filter((product) => product.category === selectedCategory);
+  const displayedProducts = typeof maxProducts === "number"
+    ? filteredProducts.slice(0, maxProducts)
+    : filteredProducts;
 
   const openZoomViewer = (image, alt) => {
     setZoomImage(image);
@@ -194,7 +428,7 @@ export default function Shop({
           <p className="shop-selected-category">Showing: {selectedCategory}</p>
         )}
         <div className="products">
-          {filteredProducts.map((p, i) => (
+          {displayedProducts.map((p, i) => (
             <article key={i} className="card product-card">
               {showFeaturedBadge && <span className="product-badge">Featured</span>}
               {p.image ? (
