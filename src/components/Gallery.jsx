@@ -1,12 +1,12 @@
 import React from "react";
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1523419409543-9f915f75de16?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=800&q=80",
+  "images/Kageri with Geeta 2.jpg.jpeg",
+  "images/Pandith with Geeta.jpg.jpeg",
+  "images/Raghu with Geeta 1.jpg.jpeg",
+  "images/B Jayashree with Geeta 1.jpg.jpeg",
+  "images/mandala painting.jpg.jpeg",
+  "images/mandala painting.jpg.jpeg",
 ];
 
 export default function Gallery() {
