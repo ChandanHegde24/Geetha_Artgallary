@@ -47,7 +47,7 @@ const About = () => {
             <span>Custom-designed Mandalas</span>
             <span>Personalized creations</span>
           </div>
-          <Link className="about-btn" to="/shop">Read More</Link>
+          <Link className="about-btn" to="/shop">Explore Mandalas</Link>
         </div>
       </div>
     </section>

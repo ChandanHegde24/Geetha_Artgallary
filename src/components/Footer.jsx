@@ -32,7 +32,7 @@ export default function Footer() {
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <rect x="3" y="6.5" width="18" height="11" rx="4" fill="currentColor" />
-          <path d="M10 9.5 15 12 10 14.5V9.5z" fill="#fff" />
+          <path d="M10 9.5 L15 12 L10 14.5 Z" fill="#fff" />
         </svg>
       ),
     },
@@ -81,7 +81,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="footer-copy">© 2026 {SITE.brandName}. All Rights Reserved.</p>
+      <p className="footer-copy">© 2026 <a href="https://www.linkedin.com/in/code-stack" target="_blank" rel="noreferrer">CodeStack.</a> All Rights Reserved.</p>
     </footer>
   );
 }
