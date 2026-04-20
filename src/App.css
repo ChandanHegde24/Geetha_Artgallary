@@ -47,6 +47,7 @@ h2 {
 
 .navbar {
   position: sticky;
+  height: 80px;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px);
@@ -112,9 +113,9 @@ h2 {
 }
 
 .logo-image {
-  height: 60px;
-  width: 60px;
-  min-width: 60px;
+  height: 200px;
+  width: 200px;
+  min-width: 80px;
   max-width: 100%;
   object-fit: contain;
   object-position: center;
