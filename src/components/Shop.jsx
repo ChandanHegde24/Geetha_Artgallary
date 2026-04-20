@@ -3,165 +3,82 @@ import { SITE } from "../config/site";
 
 const products = [
   {
-    name: "Mandala Painting",
-    price: "₹ 1,500.00",
+    name: "Budhha Mandala",
+    price: "₹ 4,000.00",
     eta: "Ready to order",
     category: "Wall Painting",
-    image: "images/mandala painting.jpg.jpeg",
-  },
-
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
+    image: "/img/Budhha.jpg",
   },
   {
     name: "Wall Painting With House Name",
     price: "₹ 2,500.00",
     eta: "Customizable",
+    category: ["Decor Items","Wall Painting"],
+    image: "/img/house name.jpg",
+  },
+  {
+    name: "Chocolate Photo Frame",
+    price: "₹ 1,800.00",
+    eta: "Customizable",
     category: "Wall Painting",
-    image: "images/wall painting with house name.jpg.jpeg",
+    image: "/img/chocolate.jpg",
   },
   {
-    name: "Tealight Holder (per pair)",
-    price: "₹ 350.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "",
-  },
-  {
-    name: "Table Top Photo Frame With Mirror",
-    price: "₹ 850.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "images\table top photo frames.jpg.jpeg",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Table Top Photo Frame",
-    price: "₹ 600.00",
-    eta: "Ready to order",
-    category: "Decor Items",
-    image: "/img/tabletopphotoframe.png",
-  },
-  {
-    name: "Resin Coated Earrings (Pair)",
-    price: "₹ 125.00",
-    eta: "Ready to order",
-    category: "Fashion",
-    image: "",
-  },
-  {
-    name: "Elephant Mandala",
-    price: "₹ 2,000.00",
-    eta: "Size: 10*10 inch",
-    category: "Wall Decor",
-    image: "images/elephant mandala.jpg.jpeg",
-  },
-  {
-    name: "Evil Eye Mandala",
-    price: "₹ 2,500.00",
-    eta: "Ready to order",
-    category: "Wall Decor",
-    image: "images/evil eye mandala.jpg.jpeg",
+    name: "Mandala Photo Frame",
+    price: "₹ 1,800.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/photo frame.jpg",
   },
   {
     name: "Om Mandala",
     price: "₹ 1,500.00",
-    eta: "Size: 12*12 inch",
-    category: "Wall Decor",
-    image: "images/om mandala.jpg.jpeg",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/om.jpg",
   },
+  {
+    name: "Pink Flower",
+    price: "₹ 4,000.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/pink flower.jpg",
+  },
+  {
+    name: "Purple Flower",
+    price: "₹ 1,300.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/purple flower.jpg",
+  },
+  {
+    name: "Rainbow Mirror",
+    price: "₹ 4,000.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/rainbow mirror.jpg",
+  },
+  {
+    name: "Sunset Mandala",
+    price: "₹ 2,000.00",
+    eta: "Customizable",
+    category: "Wall Painting",
+    image: "/img/sunset mandala.jpg",
+  },
+ 
+  {
+    name: "Customised Work for Upanayana",
+    price: "₹ 2000.00",
+    eta: "Ready to order",
+    category: [ "Decor Items","Wall Decor"],
+    image: "/img/upanayana.jpg",
+  },
+  
   {
     name: "Ganesh Mandala",
     price: "₹ 1,000.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/Ganesha madala.jpg",
   },
    {
@@ -175,42 +92,42 @@ const products = [
     name: "Door Side Hangings",
     price: "₹ 1,500.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/door side hangings.jpg",
   },
    {
     name: "Earrings (Per Pair)",
     price: "₹ 125.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Fashion"],
     image: "/img/earrings.jpg",
   },
    {
     name: "Elephant Mandala",
     price: "₹ 2,000.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Wall Decor"],
     image: "/img/Elephant.jpg",
   },
    {
     name: "Evil Eye Fridge Magnets",
     price: "₹ 150.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/evil eye fridge magnets.jpg",
   },
    {
     name: "Evil Eye Mandala",
     price: "₹ 2,500.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/evil eye mandala.jpg",
   },
    {
     name: "Key Holder",
     price: "₹ 800.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/key holder.jpg",
    
   },
@@ -218,7 +135,7 @@ const products = [
     name: "Key Holder",
     price: "₹ 800.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/key holder2.jpg",
   },
    {
@@ -232,74 +149,59 @@ const products = [
     name: "Magnets Photo Frames (per pc)",
     price: "₹ 250.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Tray and Coaster"],
     image: "/img/magnet photo frame.jpg",
   },
   {
     name: "Mandala Painting",
     price: "₹ 1,500.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use","Wall Painting", "Decor Items","Wall Decor"],
     image: "/img/mandala painting.jpg",
   },
   {
     name: "Pop Socket (per pc)",
     price: "₹ 150.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items"],
     image: "/img/Pop Socket.jpg",
   },
   {
     name: "Resin Coated Earrings (Pair)",
     price: "₹ 125.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Fashion"],
     image: "/img/Resin Coated Earrings.jpg",
   },
   {
     name: "Table Top Photo Frame",
     price: "₹ 600.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/tabletopphotoframe.png",
   },
   {
     name: "Table Top Photo Frame With Mirror",
     price: "₹ 850.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Wall Decor"],
     image: "/img/tabletopphotoframemirror.jpg",
   },
   {
     name: "Tealight Candle Holders (per pc)",
     price: "₹ 175.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Tray and Coaster"],
     image: "/img/tealight candle holders.jpg",
   },
   {
     name: "Tealight Holder (per pair)",
     price: "₹ 350.00",
     eta: "Ready to order",
-    category: "Gifting and Personal use",
+    category: ["Gifting and Personal use", "Decor Items","Tray and Coaster"],
     image: "/img/tealight holder.jpg",
   },
  
-
-  {
-    name: "Handpainted Tray Set",
-    price: "₹ 1,250.00",
-    eta: "Ready to order",
-    category: "Tray and Coaster",
-    image: "",
-  },
-  {
-    name: "Mandala Coaster Set",
-    price: "₹ 550.00",
-    eta: "Ready to order",
-    category: "Tray and Coaster",
-    image: "",
-  },
 ];
 
 const shopCategories = [
@@ -327,7 +229,10 @@ export default function Shop({
   const allProducts = Array.isArray(productsData) && productsData.length > 0 ? productsData : products;
   const filteredProducts = selectedCategory === "All"
     ? allProducts
-    : allProducts.filter((product) => product.category === selectedCategory);
+    : allProducts.filter((product) => {
+        const categories = Array.isArray(product.category) ? product.category : [product.category];
+        return categories.includes(selectedCategory);
+      });
   const displayedProducts = typeof maxProducts === "number"
     ? filteredProducts.slice(0, maxProducts)
     : filteredProducts;
@@ -367,6 +272,16 @@ export default function Shop({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  const getCategoryCount = (category) => {
+    if (category === "All") {
+      return allProducts.length;
+    }
+    return allProducts.filter((product) => {
+      const categories = Array.isArray(product.category) ? product.category : [product.category];
+      return categories.includes(category);
+    }).length;
+  };
+
   return (
     <>
       {showCategories && (
@@ -381,7 +296,7 @@ export default function Shop({
                 className={`shop-category-chip ${selectedCategory === category ? "is-active" : ""}`}
                 onClick={() => setSelectedCategory(category)}
               >
-                {category}
+                {category} <span className="category-count">({getCategoryCount(category)})</span>
               </button>
             ))}
           </div>

@@ -679,6 +679,13 @@ h2 {
   color: #1f2937;
 }
 
+.category-count {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-left: 6px;
+}
+
 .category-card {
   background: var(--bg-card);
   border: 1px solid var(--stroke);
