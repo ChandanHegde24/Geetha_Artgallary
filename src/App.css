@@ -8,9 +8,16 @@
 }
 
 body {
-  background: radial-gradient(circle at 0% 0%, #ffffff 0%, var(--bg) 55%, #f1ede6 100%);
+  background: 
+    radial-gradient(
+      circle at 0% 0%, 
+      color-mix(in srgb, var(--bg-soft), white 20%) 0%, 
+      var(--bg) 55%, 
+      color-mix(in srgb, var(--bg), #f1ede6 20%) 100%
+    );
   color: var(--text);
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 section {
@@ -35,7 +42,7 @@ h2 {
   font-size: clamp(2rem, 3vw, 3rem);
   margin-bottom: 24px;
   font-weight: 800;
-  color: #1f2937;
+  color: var(--text);
 }
 
 .navbar {
@@ -43,8 +50,12 @@ h2 {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px);
-  background: linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(255, 250, 240, 0.95));
-  border-bottom: 2px solid rgba(250, 204, 21, 0.2);
+  background: linear-gradient(
+    135deg, 
+    color-mix(in srgb, var(--bg-soft), white 50%) 0%, 
+    color-mix(in srgb, var(--bg-soft), rgba(255, 250, 240, 0.95) 30%) 100%
+  );
+  border-bottom: 2px solid var(--stroke);
   padding: 1rem 8%;
   display: flex;
   align-items: center;
@@ -52,6 +63,7 @@ h2 {
   gap: 2rem;
   animation: slideDown 0.6s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .logo {
@@ -152,8 +164,8 @@ h2 {
 }
 
 .nav-links a:hover {
-  color: #111827;
-  background: rgba(250, 204, 21, 0.1);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
 }
 
 .nav-links a:hover::after,
@@ -162,7 +174,7 @@ h2 {
 }
 
 .nav-links a.active {
-  color: #111827;
+  color: var(--accent-deep);
   font-weight: 700;
 }
 
@@ -184,6 +196,40 @@ h2 {
 .whatsapp-chip:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(37, 211, 102, 0.35);
+}
+
+.theme-toggle {
+  background: var(--accent-soft);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--accent);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05) rotate(20deg);
+  box-shadow: 0 4px 12px var(--accent-soft);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
 }
 
 .social-links {

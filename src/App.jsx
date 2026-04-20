@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -11,27 +12,29 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Home />
-          </>
-        } />
-        <Route path="/about" element={
-          <>
-            <About />
-          </>
-        } />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/shop" element={<Shop title="Shop Collection" showFeaturedBadge={false} showCategories={true} />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Home />
+            </>
+          } />
+          <Route path="/about" element={
+            <>
+              <About />
+            </>
+          } />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/shop" element={<Shop title="Shop Collection" showFeaturedBadge={false} showCategories={true} />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="light"] {
   --bg: #f8f4ee;
   --bg-soft: #fffdf9;
   --bg-card: rgba(255, 255, 255, 0.96);
@@ -9,4 +10,17 @@
   --accent-deep: #8b5a14;
   --card: rgba(255, 255, 255, 0.94);
   --stroke: rgba(183, 121, 31, 0.28);
+}
+
+[data-theme="dark"] {
+  --bg: #1a1615;
+  --bg-soft: #2d2620;
+  --bg-card: rgba(45, 38, 32, 0.96);
+  --text: #e5e0db;
+  --muted: #a3959a;
+  --accent: #d4a55f;
+  --accent-soft: rgba(212, 165, 95, 0.14);
+  --accent-deep: #e6b866;
+  --card: rgba(45, 38, 32, 0.94);
+  --stroke: rgba(212, 165, 95, 0.28);
 }
