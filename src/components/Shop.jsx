@@ -7,7 +7,6 @@ const products = [
     price: "₹ 1,500.00",
     eta: "Ready to order",
     category: "Wall Painting",
-    description: "Handmade mandala work that elevates your wall with mindful symmetry.",
     image: "images/mandala painting.jpg.jpeg",
   },
 
@@ -16,7 +15,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -24,7 +22,6 @@ const products = [
     price: "₹ 2,500.00",
     eta: "Customizable",
     category: "Wall Painting",
-    description: "Personalized mandala painting featuring your home name and style.",
     image: "images/wall painting with house name.jpg.jpeg",
   },
   {
@@ -32,7 +29,6 @@ const products = [
     price: "₹ 350.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Pair of festive tealight holders crafted for warm ambient lighting.",
     image: "",
   },
   {
@@ -40,7 +36,6 @@ const products = [
     price: "₹ 850.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Photo frame with mirror accents to brighten compact spaces.",
     image: "images\table top photo frames.jpg.jpeg",
   },
   {
@@ -48,7 +43,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -56,7 +50,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -64,7 +57,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -72,7 +64,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -80,7 +71,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -88,7 +78,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -96,7 +85,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -104,7 +92,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -112,7 +99,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -120,7 +106,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -128,7 +113,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -136,7 +120,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -144,7 +127,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Decor Items",
-    description: "Decorative photo frame with artistic hand-painted detailing.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -152,7 +134,6 @@ const products = [
     price: "₹ 125.00",
     eta: "Ready to order",
     category: "Fashion",
-    description: "Lightweight wearable art earrings finished with glossy resin coating.",
     image: "",
   },
   {
@@ -160,7 +141,6 @@ const products = [
     price: "₹ 2,000.00",
     eta: "Size: 10*10 inch",
     category: "Wall Decor",
-    description: "Elegant elephant-themed mandala composition with symbolic motifs.",
     image: "images/elephant mandala.jpg.jpeg",
   },
   {
@@ -168,7 +148,6 @@ const products = [
     price: "₹ 2,500.00",
     eta: "Ready to order",
     category: "Wall Decor",
-    description: "Protective evil-eye mandala artwork designed with vibrant contrasts.",
     image: "images/evil eye mandala.jpg.jpeg",
   },
   {
@@ -176,7 +155,6 @@ const products = [
     price: "₹ 1,500.00",
     eta: "Size: 12*12 inch",
     category: "Wall Decor",
-    description: "Sacred Om mandala piece ideal for meditation corners and pooja spaces.",
     image: "images/om mandala.jpg.jpeg",
   },
   {
@@ -184,7 +162,6 @@ const products = [
     price: "₹ 1,000.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/Ganesha madala.jpg",
   },
    {
@@ -192,7 +169,6 @@ const products = [
     price: "₹ 200.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/bookmarks.jpg",
   },
    {
@@ -200,7 +176,6 @@ const products = [
     price: "₹ 1,500.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/door side hangings.jpg",
   },
    {
@@ -208,7 +183,6 @@ const products = [
     price: "₹ 125.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/earrings.jpg",
   },
    {
@@ -216,7 +190,6 @@ const products = [
     price: "₹ 2,000.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/Elephant.jpg",
   },
    {
@@ -224,7 +197,6 @@ const products = [
     price: "₹ 150.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/evil eye fridge magnets.jpg",
   },
    {
@@ -232,7 +204,6 @@ const products = [
     price: "₹ 2,500.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/evil eye mandala.jpg",
   },
    {
@@ -240,7 +211,6 @@ const products = [
     price: "₹ 800.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/key holder.jpg",
    
   },
@@ -249,7 +219,6 @@ const products = [
     price: "₹ 800.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/key holder2.jpg",
   },
    {
@@ -257,7 +226,6 @@ const products = [
     price: "₹ 125.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/key chains.jpg",
   },
    {
@@ -265,7 +233,6 @@ const products = [
     price: "₹ 250.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/magnet photo frame.jpg",
   },
   {
@@ -273,7 +240,6 @@ const products = [
     price: "₹ 1,500.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/mandala painting.jpg",
   },
   {
@@ -281,7 +247,6 @@ const products = [
     price: "₹ 150.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/Pop Socket.jpg",
   },
   {
@@ -289,7 +254,6 @@ const products = [
     price: "₹ 125.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/Resin Coated Earrings.jpg",
   },
   {
@@ -297,7 +261,6 @@ const products = [
     price: "₹ 600.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/tabletopphotoframe.png",
   },
   {
@@ -305,7 +268,6 @@ const products = [
     price: "₹ 850.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/tabletopphotoframemirror.jpg",
   },
   {
@@ -313,7 +275,6 @@ const products = [
     price: "₹ 175.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/tealight candle holders.jpg",
   },
   {
@@ -321,7 +282,6 @@ const products = [
     price: "₹ 350.00",
     eta: "Ready to order",
     category: "Gifting and Personal use",
-    description: "Auspicious Ganesh artwork suitable for gifting and home blessings.",
     image: "/img/tealight holder.jpg",
   },
  
@@ -331,7 +291,6 @@ const products = [
     price: "₹ 1,250.00",
     eta: "Ready to order",
     category: "Tray and Coaster",
-    description: "Functional tray set with hand-painted patterns for stylish serving.",
     image: "",
   },
   {
@@ -339,7 +298,6 @@ const products = [
     price: "₹ 550.00",
     eta: "Ready to order",
     category: "Tray and Coaster",
-    description: "Durable coaster set with vibrant mandala detailing for tabletops.",
     image: "",
   },
 ];

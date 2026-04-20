@@ -23,7 +23,6 @@ function App() {
         <Route path="/about" element={
           <>
             <About />
-            <Home />
           </>
         } />
         <Route path="/gallery" element={<Gallery />} />

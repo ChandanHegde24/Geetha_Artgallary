@@ -1,12 +1,12 @@
 import React from "react";
 
 const galleryImages = [
-  "images/Kageri with Geeta 2.jpg.jpeg",
-  "images/Pandith with Geeta.jpg.jpeg",
-  "images/Raghu with Geeta 1.jpg.jpeg",
-  "images/B Jayashree with Geeta 1.jpg.jpeg",
-  "images/mandala painting.jpg.jpeg",
-  "images/mandala painting.jpg.jpeg",
+  "gallery/Kageri with Geeta 2.jpg.jpeg",
+  "gallery/Pandith with Geeta.jpg.jpeg",
+  "gallery/Raghu with Geeta 1.jpg.jpeg",
+  "gallery/B Jayashree with Geeta 1.jpg.jpeg",
+  "gallery/mandala painting.jpg.jpeg",
+  "gallery/mandala painting.jpg.jpeg",
 ];
 
 export default function Gallery() {

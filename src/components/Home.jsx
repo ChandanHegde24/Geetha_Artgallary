@@ -3,34 +3,34 @@ import Shop from "./Shop";
 
 const reasons = [
   {
-    icon: "🧠",
     title: "Meditation & Mindfulness",
     text: "Mandalas help calm the mind and improve focus. The repetitive patterns and balanced symmetry guide thoughts into a meditative state.",
+    backgroundImage: "/meditation.png",
   },
   {
-    icon: "💆",
     title: "Stress Relief & Relaxation",
     text: "Creating or coloring mandalas can be a soothing activity, helping to reduce stress and anxiety while encouraging mindfulness.",
+    backgroundImage: "/Relaxation.png",    
   },
   {
-    icon: "🎯",
     title: "Skill Development",
     text: "Drawing mandalas enhances artistic skills such as symmetry, balance, and composition while improving patience and attention to detail.",
+    backgroundImage: "/Skill.jpg",
   },
   {
-    icon: "🕉️",
     title: "Spiritual Growth & Healing",
     text: "In Buddhism, mandalas represent a sacred palace, symbolizing wisdom and enlightenment and supporting inner healing.",
+    backgroundImage: "/Healing.png",
   },
   {
-    icon: "🎨",
     title: "Self-Expression & Creativity",
     text: "Mandalas offer endless possibilities for creative expression. Each mandala reflects the artist's emotions and personal journey.",
+    backgroundImage: "/Creativity.png",
   },
   {
-    icon: "🌿",
     title: "Cultural & Symbolic Meaning",
     text: "Colors and patterns carry meaning: Red - strength, Blue - calmness, Yellow - learning, Green - growth.",
+    backgroundImage: "/Cultural.png",
   },
 ];
 
@@ -75,7 +75,20 @@ const popularPicksProducts = [
 
 export default function Home() {
   return (
-    <>
+    <>      <section className="mandala-info artist-bio-section">
+        <div className="artist-bio-content">
+          <h2>Meet Geeta Bhat – A Passionate Mandala Artist</h2>
+          <p className="about-text">
+            Geeta Bhat, a dedicated housewife, discovered her passion for mandala art eight years ago as a creative hobby. Over time, her deep connection with intricate patterns and sacred geometry transformed her into a professional mandala artist. Today, her mesmerizing artwork not only fosters mindfulness and creativity but also serves as a source of inspiration for art lovers worldwide.
+          </p>
+          <p className="about-text">
+            Through years of dedication and practice, Geeta has mastered various mandala styles, blending traditional techniques with modern aesthetics. Her vibrant, hand-drawn mandalas are more than just art—they are a form of meditation, spreading positivity, tranquility, and balance. Her work resonates with individuals seeking therapeutic and meaningful artistic experiences.
+          </p>
+          <p className="about-text">
+            With a strong presence in the global art community, Geeta's colorful and intricate mandalas have reached art enthusiasts in the UK, US, Australia, and beyond. Each of her creations reflects her passion, precision, and the transformative power of mandala art. Whether you are looking for custom-designed mandalas, art prints, or personalized creations, Geeta's work brings a touch of mindfulness and serenity to every space.
+          </p>
+        </div>
+      </section>
       <section className="mandala-info mandala-intro-layout">
         <div className="mandala-intro-content">
           <p className="section-tag">What is Mandala Art?</p>
@@ -100,20 +113,28 @@ export default function Home() {
       <section className="mandala-info why-mandala-section">
         <p className="section-tag">Why Mandala Art?</p>
         <div className="why-benefits-grid">
-          {reasons.map((item, index) => (
-            <article key={item.title} className="benefit-card">
-              <div className="benefit-topline">
-                <span className="benefit-icon" aria-hidden="true">
-                  {item.icon}
-                </span>
-                <span className="benefit-index">0{index + 1}</span>
-              </div>
+          {reasons.map((item) => (
+            <article 
+              key={item.title} 
+              className="benefit-card"
+              style={item.backgroundImage ? {
+                backgroundImage: `linear-gradient(135deg, rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.75)), url('${item.backgroundImage}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              } : {}}
+            >
               <h3 className="benefit-title">{item.title}</h3>
               <p className="benefit-text">{item.text}</p>
             </article>
           ))}
         </div>
       </section>
+
+      <Shop
+        title="Popular Picks"
+        maxProducts={3}
+        productsData={popularPicksProducts}
+      />
 
       <section className="mandala-info">
         <p className="section-tag">Words of Encouragement from the Stars</p>
@@ -127,12 +148,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <Shop
-        title="Popular Picks"
-        maxProducts={3}
-        productsData={popularPicksProducts}
-      />
     </>
   );
 }
