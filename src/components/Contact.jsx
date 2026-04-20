@@ -28,7 +28,6 @@ export default function Contact() {
       <section className="store-locations">
         <p className="section-tag">Visit Us</p>
         <h2>Our Store Locations</h2>
-        <p className="section-subtitle">Find us at multiple locations across the NCR region</p>
         
         <div className="stores-container">
           {/* Map Display */}

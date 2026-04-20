@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import { SITE } from "../config/site";
 
 const heroSlides = [
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
-  "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1800&q=80",
-  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1800&q=80",
-  "https://images.unsplash.com/photo-1523419409543-9f915f75de16?auto=format&fit=crop&w=1800&q=80",
+  "/hero1.jpg",
+  "/hero2.jpg",
+  "/hero3.jpg",
 ];
 
 export default function Hero() {

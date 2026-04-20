@@ -54,22 +54,19 @@ const popularPicksProducts = [
     name: "Mandala Painting",
     price: "₹ 1,500.00",
     eta: "Ready to order",
-    category: "Wall Painting",
-    image: "",
+    image: "/img/mandala painting.jpg",
   },
   {
     name: "Table Top Photo Frame",
     price: "₹ 600.00",
     eta: "Ready to order",
-    category: "Decor Items",
     image: "/img/tabletopphotoframe.png",
   },
   {
     name: "Wall Painting With House Name",
     price: "₹ 2,500.00",
     eta: "Customizable",
-    category: "Wall Painting",
-    image: "",
+    image: "/img/house name.jpg",
   },
 ];
 
