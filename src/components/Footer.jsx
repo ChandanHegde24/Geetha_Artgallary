@@ -31,8 +31,8 @@ export default function Footer() {
       brandClass: "social-youtube",
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3" y="6.5" width="18" height="11" rx="4" fill="currentColor" />
-          <path d="M10 9.5 L15 12 L10 14.5 Z" fill="#fff" />
+          <rect x="2" y="4" width="20" height="16" rx="3" fill="#FF0000" />
+          <path d="M9.5 10.5 L16 14 L9.5 17.5 Z" fill="#fff" />
         </svg>
       ),
     },
