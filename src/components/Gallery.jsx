@@ -5,8 +5,8 @@ const galleryImages = [
   "gallery/Pandith with Geeta.jpg.jpeg",
   "gallery/Raghu with Geeta 1.jpg.jpeg",
   "gallery/B Jayashree with Geeta 1.jpg.jpeg",
-  "gallery/mandala painting.jpg.jpeg",
-  "gallery/mandala painting.jpg.jpeg",
+  "gallery/exhibition.jpg",
+  "gallery/warli and mandala fusion.jpg",
 ];
 
 export default function Gallery() {

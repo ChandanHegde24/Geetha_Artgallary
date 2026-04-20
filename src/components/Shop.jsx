@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { SITE } from "../config/site";
 
 const products = [
@@ -342,6 +343,11 @@ export default function Shop({
             </article>
           ))}
         </div>
+        {typeof maxProducts === "number" && (
+          <div className="shop-view-all-container">
+            <Link className="btn btn-primary" to="/shop">View All</Link>
+          </div>
+        )}
       </section>
       {zoomImage && (
         <div className="image-viewer-overlay" role="dialog" aria-modal="true" aria-label="Product image zoom viewer" onClick={closeZoomViewer}>

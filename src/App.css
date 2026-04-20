@@ -20,6 +20,44 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--accent);
+  background: linear-gradient(120deg, var(--accent-soft), rgba(183, 121, 31, 0.15));
+  color: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: slideUpIn 0.3s ease forwards;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(183, 121, 31, 0.3);
+  border-color: var(--accent-deep);
+  color: var(--accent-deep);
+  background: linear-gradient(120deg, rgba(183, 121, 31, 0.3), rgba(183, 121, 31, 0.25));
+}
+
+@keyframes slideUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 section {
   padding: 96px 10%;
 }
@@ -856,6 +894,17 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 26px;
+  margin-bottom: 32px;
+}
+
+.shop-view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.shop-view-all-container .btn {
+  min-width: 180px;
 }
 
 .shop-selected-category {
@@ -1452,6 +1501,19 @@ h2 {
   cursor: pointer;
 }
 
+.footer-link {
+  display: block;
+  margin-bottom: 8px;
+  color: #5f6b7a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
 .footer-social-links {
   flex-wrap: wrap;
 }
@@ -1481,6 +1543,17 @@ h2 {
   text-align: center;
   color: #64748b;
   font-weight: 600;
+}
+
+.footer-copy a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-copy a:hover {
+  color: var(--accent-deep);
+  text-decoration: underline;
 }
 
 @keyframes slideDown {
