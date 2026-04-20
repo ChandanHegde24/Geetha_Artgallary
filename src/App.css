@@ -582,10 +582,22 @@ h2 {
 }
 
 .about-text {
-  color: #4b5563;
+  color: var(--text);
   line-height: 1.9;
   margin-bottom: 16px;
   font-size: 1.02rem;
+}
+
+.about-text-kannada {
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+  border-left: 3px solid var(--accent);
+  padding-left: 12px;
+  font-family: 'Noto Sans Kannada', 'Kannada', sans-serif;
 }
 
 .about-points {
