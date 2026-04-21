@@ -914,6 +914,43 @@ h2 {
   font-size: 1.05rem;
 }
 
+.shop-sort-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.shop-sort-label {
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.shop-sort-select {
+  padding: 10px 16px;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  background: var(--bg-card);
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.shop-sort-select:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.shop-sort-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
 .card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 251, 239, 0.8));
   border: 2px solid rgba(212, 175, 55, 0.15);

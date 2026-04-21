@@ -224,6 +224,7 @@ export default function Shop({
   productsData
 }) {
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
+  const [selectedSort, setSelectedSort] = useState("default");
   const [zoomImage, setZoomImage] = useState(null);
   const [zoomImageAlt, setZoomImageAlt] = useState("");
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -234,9 +235,36 @@ export default function Shop({
         const categories = Array.isArray(product.category) ? product.category : [product.category];
         return categories.includes(selectedCategory);
       });
+
+  const getSortedProducts = (productsToSort) => {
+    const sorted = [...productsToSort];
+    
+    switch (selectedSort) {
+      case "price-low-to-high":
+        return sorted.sort((a, b) => {
+          const priceA = parseFloat(a.price.replace(/[₹,\s]/g, ""));
+          const priceB = parseFloat(b.price.replace(/[₹,\s]/g, ""));
+          return priceA - priceB;
+        });
+      case "price-high-to-low":
+        return sorted.sort((a, b) => {
+          const priceA = parseFloat(a.price.replace(/[₹,\s]/g, ""));
+          const priceB = parseFloat(b.price.replace(/[₹,\s]/g, ""));
+          return priceB - priceA;
+        });
+      case "name-a-to-z":
+        return sorted.sort((a, b) => a.name.localeCompare(b.name));
+      case "name-z-to-a":
+        return sorted.sort((a, b) => b.name.localeCompare(a.name));
+      default:
+        return sorted;
+    }
+  };
+
+  const sortedFilteredProducts = getSortedProducts(filteredProducts);
   const displayedProducts = typeof maxProducts === "number"
-    ? filteredProducts.slice(0, maxProducts)
-    : filteredProducts;
+    ? sortedFilteredProducts.slice(0, maxProducts)
+    : sortedFilteredProducts;
 
   const openZoomViewer = (image, alt) => {
     setZoomImage(image);
@@ -309,6 +337,21 @@ export default function Shop({
         {selectedCategory !== "All" && showCategories && (
           <p className="shop-selected-category">Showing: {selectedCategory}</p>
         )}
+        <div className="shop-sort-container">
+          <label htmlFor="sort-select" className="shop-sort-label">Sort by:</label>
+          <select
+            id="sort-select"
+            className="shop-sort-select"
+            value={selectedSort}
+            onChange={(e) => setSelectedSort(e.target.value)}
+          >
+            <option value="default">Default</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="price-high-to-low">Price: High to Low</option>
+            <option value="name-a-to-z">Name: A to Z</option>
+            <option value="name-z-to-a">Name: Z to A</option>
+          </select>
+        </div>
         <div className="products">
           {displayedProducts.map((p, i) => (
             <article key={i} className="card product-card">
