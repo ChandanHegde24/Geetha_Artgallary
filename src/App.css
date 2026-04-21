@@ -625,6 +625,41 @@ h2 {
   animation: spin 60s linear infinite;
 }
 
+.youtube-playlist-section {
+  text-align: center;
+}
+
+.youtube-videos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.youtube-video-item {
+  width: 100%;
+  max-width: 380px;
+  flex: 0 1 380px;
+}
+
+.youtube-playlist-container,
+.youtube-video-container {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-playlist-container iframe,
+.youtube-video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
 .home-extra {
   text-align: center;
 }
@@ -1787,6 +1822,17 @@ h2 {
 
   .store-card {
     padding: 20px;
+  }
+
+  .youtube-videos-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .youtube-video-item {
+    max-width: 100%;
+    flex: 0 1 auto;
   }
 }
 

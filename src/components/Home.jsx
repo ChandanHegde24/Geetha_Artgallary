@@ -136,6 +136,130 @@ export default function Home() {
         productsData={popularPicksProducts}
       />
 
+      <section className="mandala-info youtube-playlist-section">
+        <p className="section-tag">Video Tutorials</p>
+        <h2>Mandala Art Tutorials & Behind the Scenes</h2>
+        <div className="youtube-videos-grid">
+          <div className="youtube-video-item">
+            <div className="youtube-playlist-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/videoseries?list=PLy2OfIXlOp2T3uqy6Lllcf2iaHwnDYQk7" 
+                title="Mandala Art Playlist" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+          <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/47AGJbVlMEo" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/BKZvWQq42vg" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/UBC7vrH-6gw" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/hLcZ0vkPCq4" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/Dd83gVdKBOY" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/z48hGVkGKd8" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/UQ23XDH5ld4" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+                    <div className="youtube-video-item">
+            <div className="youtube-video-container">
+              <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/aGZsJTccCU8" 
+                title="Featured Mandala Tutorial" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mandala-info">
         <p className="section-tag">Words of Encouragement from the Stars</p>
         <h2>Voices of Appreciation</h2>
