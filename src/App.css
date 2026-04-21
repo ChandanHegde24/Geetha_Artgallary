@@ -566,7 +566,10 @@ h2 {
   animation: fadeUp 0.8s ease both;
 }
 
-.artist-bio-section {
+.mandala-info.artist-bio-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
