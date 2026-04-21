@@ -31,9 +31,10 @@ export default function Footer() {
       href: SITE.socialLinks.youtube,
       brandClass: "social-youtube",
       icon: (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="2" y="4" width="20" height="16" rx="3" fill="#FF0000" />
-          <path d="M9.5 10.5 L16 14 L9.5 17.5 Z" fill="#fff" />
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M21.7 7.2c-.2-.8-.8-1.4-1.6-1.6C18.7 5.2 12 5.2 12 5.2s-6.7 0-8.1.4c-.8.2-1.4.8-1.6 1.6C2 8.6 2 12 2 12s0 3.4.3 4.8c.2.8.8 1.4 1.6 1.6 1.4.4 8.1.4 8.1.4s6.7 0 8.1-.4c.8-.2 1.4-.8 1.6-1.6.3-1.4.3-4.8.3-4.8s0-3.4-.3-4.8Z" fill="currentColor" />
+          <path d="M9.7 8.9V15.1L15.1 12L9.7 8.9Z" fill="#ffffff" opacity="0.98" />
+          <path d="M9.3 9.3V14.7L14.2 12L9.3 9.3Z" fill="#dc0c0c" />
         </svg>
       ),
     },
