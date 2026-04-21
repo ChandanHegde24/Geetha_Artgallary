@@ -31,7 +31,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-image">
           <img
-            src="public/about.jpg"
+            src="/about.jpg"
             alt="Mandala Art"
           />
         </div>
