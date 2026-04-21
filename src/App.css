@@ -570,6 +570,11 @@ h2 {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
+  background-image: url('/homeaboutbg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .artist-bio-content h2 {
@@ -647,7 +652,7 @@ h2 {
 }
 
 .about-content {
-  text-align: left;
+  text-align: justify;
 }
 
 .about-subtitle {
@@ -671,6 +676,7 @@ h2 {
 }
 
 .about-text-kannada {
+  text-align: justify;
   color: var(--muted);
   line-height: 1.9;
   margin-bottom: 16px;
