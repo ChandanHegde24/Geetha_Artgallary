@@ -131,6 +131,7 @@ export default function Home() {
       <Shop
         title="Popular Picks"
         maxProducts={3}
+        showFilters={false}
         productsData={popularPicksProducts}
       />
 

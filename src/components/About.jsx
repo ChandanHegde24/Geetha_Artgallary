@@ -1,6 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const teamMembers = [
+  {
+    name: "Geeta Bhat",
+    location:"Mandala Artist-Manipal",
+  },
+  {
+    name: "Priya Bhat",
+    location: "Isiri Ladies Center, Kumta",
+  },
+  {
+    name: "Medha Pandith",
+    location: "Bangalore",
+  },
+  {
+    name: "Manyshree Pandith",
+
+    location: "Bangalore",
+  },
+  {
+    name: "Swayam Bhat",
+    location: "Navilgoan",
+  },
+];
+
 const About = () => {
   return (
     <section id="about" className="about">
@@ -12,8 +36,7 @@ const About = () => {
           />
         </div>
         <div className="about-content">
-          <h4 className="about-subtitle">Meet Geeta Bhat - A Passionate Mandala Artist</h4>
-          <h2 className="about-title">Mandala Magic</h2>
+          <h2 className="about-title">Geeta Bhat</h2>
           <p className="about-text">
             Geeta Bhat, a dedicated housewife, discovered her passion for mandala art
             eight years ago as a creative hobby. Over time, her deep connection with
@@ -50,6 +73,21 @@ const About = () => {
           <Link className="about-btn" to="/shop">Explore Mandalas</Link>
         </div>
       </div>
+
+      <section className="our-team">
+        <p className="section-tag">Meet The Team</p>
+        <h2>Our Team</h2>
+        <div className="team-grid">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-card">
+              <div className="team-card-content">
+                <h3 className="team-name">{member.name}</h3>
+                <p className="team-location">{member.location}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 };

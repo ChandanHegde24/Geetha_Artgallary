@@ -219,22 +219,32 @@ export default function Shop({
   title = "Our Signature Collection",
   showFeaturedBadge = true,
   showCategories = false,
+  showFilters = true,
   initialCategory = "All",
   maxProducts,
   productsData
 }) {
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedSort, setSelectedSort] = useState("default");
+  const [priceRange, setPriceRange] = useState([0, 5000]);
   const [zoomImage, setZoomImage] = useState(null);
   const [zoomImageAlt, setZoomImageAlt] = useState("");
   const [zoomLevel, setZoomLevel] = useState(1);
   const allProducts = Array.isArray(productsData) && productsData.length > 0 ? productsData : products;
-  const filteredProducts = selectedCategory === "All"
-    ? allProducts
-    : allProducts.filter((product) => {
-        const categories = Array.isArray(product.category) ? product.category : [product.category];
-        return categories.includes(selectedCategory);
-      });
+  
+  const filteredProducts = allProducts.filter((product) => {
+    const categoryMatch = selectedCategory === "All"
+      ? true
+      : (() => {
+          const categories = Array.isArray(product.category) ? product.category : [product.category];
+          return categories.includes(selectedCategory);
+        })();
+    
+    const price = parseFloat(product.price.replace(/[₹,\s]/g, ""));
+    const priceMatch = price >= priceRange[0] && price <= priceRange[1];
+    
+    return categoryMatch && priceMatch;
+  });
 
   const getSortedProducts = (productsToSort) => {
     const sorted = [...productsToSort];
@@ -337,21 +347,58 @@ export default function Shop({
         {selectedCategory !== "All" && showCategories && (
           <p className="shop-selected-category">Showing: {selectedCategory}</p>
         )}
-        <div className="shop-sort-container">
-          <label htmlFor="sort-select" className="shop-sort-label">Sort by:</label>
-          <select
-            id="sort-select"
-            className="shop-sort-select"
-            value={selectedSort}
-            onChange={(e) => setSelectedSort(e.target.value)}
-          >
-            <option value="default">Default</option>
-            <option value="price-low-to-high">Price: Low to High</option>
-            <option value="price-high-to-low">Price: High to Low</option>
-            <option value="name-a-to-z">Name: A to Z</option>
-            <option value="name-z-to-a">Name: Z to A</option>
-          </select>
-        </div>
+        {showFilters && (
+          <div className="shop-filters">
+            <div className="shop-sort-container">
+              <label htmlFor="sort-select" className="shop-sort-label">Sort by:</label>
+              <select
+                id="sort-select"
+                className="shop-sort-select"
+                value={selectedSort}
+                onChange={(e) => setSelectedSort(e.target.value)}
+              >
+                <option value="default">Default</option>
+                <option value="price-low-to-high">Price: Low to High</option>
+                <option value="price-high-to-low">Price: High to Low</option>
+                <option value="name-a-to-z">Name: A to Z</option>
+                <option value="name-z-to-a">Name: Z to A</option>
+              </select>
+            </div>
+            
+            <div className="shop-price-filter">
+              <label htmlFor="price-range" className="shop-sort-label">Price Range:</label>
+              <div className="price-inputs">
+                <input
+                  type="number"
+                  min="0"
+                  max="5000"
+                  value={priceRange[0]}
+                  onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
+                  placeholder="Min"
+                />
+                <span className="price-separator">-</span>
+                <input
+                  type="number"
+                  min="0"
+                  max="5000"
+                  value={priceRange[1]}
+                  onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
+                  placeholder="Max"
+                />
+              </div>
+              <input
+                id="price-range"
+                type="range"
+                min="0"
+                max="5000"
+                value={priceRange[1]}
+                onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
+                className="price-slider"
+              />
+              <p className="price-display">₹{priceRange[0].toLocaleString()} - ₹{priceRange[1].toLocaleString()}</p>
+            </div>
+          </div>
+        )}
         <div className="products">
           {displayedProducts.map((p, i) => (
             <article key={i} className="card product-card">

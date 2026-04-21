@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
@@ -31,7 +32,12 @@ function App() {
           } />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/shop" element={<Shop title="Shop Collection" showFeaturedBadge={false} showCategories={true} />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={
+            <>
+              <Contact />
+              <FAQ />
+            </>
+          } />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
