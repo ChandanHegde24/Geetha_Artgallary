@@ -402,25 +402,67 @@ h2 {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .navbar {
-    height: 100px;
+    height: 80px;
+    flex-direction: row;
+  }
+
+  .hamburger-menu {
+    display: flex;
   }
 
   .logo {
     padding: 8px 16px;
+    margin-right: 0;
   }
 
   .logo-image {
-    height: 250px;
-    width: 250px;
-    min-width: 100px;
+    height: 200px;
+    width: 200px;
+    min-width: 80px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: linear-gradient(
+      135deg, 
+      color-mix(in srgb, var(--bg-soft), white 50%) 0%, 
+      color-mix(in srgb, var(--bg-soft), rgba(255, 250, 240, 0.95) 30%) 100%
+    );
+    border-bottom: 2px solid var(--stroke);
+    padding: 16px 0;
+    gap: 0;
+    justify-content: flex-start;
+    display: none;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 0;
+  }
+
+  .nav-links a::after {
+    display: none;
   }
 
   .navbar-search {
     display: none;
-  }
-
-  .nav-links {
-    gap: 16px;
   }
 
   .navbar-icon-link {
