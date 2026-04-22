@@ -502,6 +502,7 @@ h2 {
 
   .about-container {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .mandala-intro-grid {
@@ -619,6 +620,13 @@ h2 {
     height: 200px;
   }
 
+
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+}
   .lightbox-content img {
     max-width: 100%;
     max-height: 80vh;
@@ -731,8 +739,6 @@ h2 {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-
-
 
   .products {
     grid-template-columns: repeat(2, 1fr);
@@ -911,6 +917,14 @@ h2 {
 
   .gallery-card img {
     height: 260px;
+  }
+}
+
+/* Keep About section stacked on mobile/tablet */
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 

@@ -27,8 +27,7 @@ const teamMembers = [
 const About = () => {
   return (
     <section id="about" className="about">
-      <div className="about-container">
-        <div className="about-image">
+      <div className="about-container">        <div className="about-image">
           <img
             src="/about.jpg"
             alt="Mandala Art"
