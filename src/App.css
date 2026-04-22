@@ -1244,14 +1244,14 @@ h2 {
 }
 
 .mandala-intro-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
   gap: 3rem;
   align-items: center;
 }
 
 .mandala-intro-layout > .section-tag {
-  grid-column: 1 / -1;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
