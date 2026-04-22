@@ -1,27 +1,36 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [isDark, setIsDark] = useState(() => {
-    // Check localStorage first
-    const saved = localStorage.getItem('theme');
-    if (saved) {
-      return saved === 'dark';
+    // Guard browser storage access to avoid runtime errors in restricted contexts.
+    try {
+      const saved = window.localStorage.getItem('theme');
+      if (saved) {
+        return saved === 'dark';
+      }
+    } catch {
+      return false;
     }
     // Default to light theme
     return false;
   });
 
   useEffect(() => {
-    // Apply theme to document
-    if (isDark) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
+    if (typeof document !== 'undefined') {
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
     }
-    // Save to localStorage
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    try {
+      window.localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    } catch {
+      // Ignore storage write failures in restricted browsing modes.
+    }
   }, [isDark]);
 
   const toggleTheme = () => {

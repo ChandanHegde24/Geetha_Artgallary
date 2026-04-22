@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SITE } from "../config/site";
 import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 

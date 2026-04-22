@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SITE } from "../config/site";
 
@@ -9,7 +9,6 @@ const heroSlides = [
 ];
 
 export default function Hero() {
-  const slides = heroSlides;
   const [activeSlide, setActiveSlide] = useState(0);
 
   const goToSlide = (index) => {
@@ -17,20 +16,20 @@ export default function Hero() {
   };
 
   const goPrev = () => {
-    setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setActiveSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
   const goNext = () => {
-    setActiveSlide((prev) => (prev + 1) % slides.length);
+    setActiveSlide((prev) => (prev + 1) % heroSlides.length);
   };
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % slides.length);
+      setActiveSlide((prev) => (prev + 1) % heroSlides.length);
     }, 3500);
 
     return () => clearInterval(timer);
-  }, [activeSlide, slides.length]);
+  }, [activeSlide]);
 
   return (
     <section
@@ -40,7 +39,7 @@ export default function Hero() {
       aria-label="Featured artwork"
     >
       <div className="hero-bg-slider" aria-hidden="true">
-        {slides.map((image, index) => (
+        {heroSlides.map((image, index) => (
           <div
             key={image}
             className={`hero-bg-slide ${index === activeSlide ? "is-active" : ""}`}
@@ -91,13 +90,13 @@ export default function Hero() {
       </div>
 
       <div className="hero-slider-dots" role="tablist" aria-label="Slide selection">
-        {slides.map((_, index) => (
+        {heroSlides.map((_, index) => (
           <button
             key={index}
             type="button"
             role="tab"
             aria-selected={index === activeSlide}
-            aria-label={`Go to slide ${index + 1} of ${slides.length}`}
+            aria-label={`Go to slide ${index + 1} of ${heroSlides.length}`}
             className={`hero-slider-dot ${index === activeSlide ? "is-active" : ""}`}
             onClick={() => goToSlide(index)}
           />

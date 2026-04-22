@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const galleryImages = [
   "gallery/Kageri with Geeta 2.jpg.jpeg",
