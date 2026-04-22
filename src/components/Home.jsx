@@ -95,22 +95,24 @@ export default function Home() {
       </section>
       <section className="mandala-info mandala-intro-layout">
         <p className="section-tag">What is Mandala Art?</p>
-        <div className="mandala-intro-content">
-          <p className="about-text">
-            Mandala is a Sanskrit word that means “circle.” It is a spiritual and ritual symbol representing the universe in Hinduism and Buddhism. Mandalas often feature intricate, symmetrical patterns radiating from a central point, symbolizing unity, harmony, and balance.
-          </p>
-          <p className="about-text">
-            Mandala art is a geometric design that embodies the interconnectedness of life, balance, and meditation. Deeply rooted in various cultures, particularly in Hindu and Buddhist traditions, mandalas are used for spiritual guidance, self-discovery, and meditation. The repetitive and detailed patterns encourage mindfulness and relaxation, making them a powerful tool for focus and inner peace.
-          </p>
-          <p className="about-text">
-            Beyond its religious and spiritual significance, mandala art has gained recognition in modern practices such as art therapy and mindfulness exercises. It is widely used to reduce stress, enhance creativity, and bring tranquility. Additionally, mandalas are now a popular element in contemporary home décor, digital illustrations, and therapeutic coloring books.
-          </p>
-          <p className="about-text">
-            Whether created as hand-drawn sketches, painted masterpieces, or digital art, mandalas continue to inspire and spread positivity, serving as a bridge between ancient traditions and modern artistic expression.
-          </p>
-        </div>
-        <div className="mandala-intro-image-wrap">
-          <img src="/mandala.jpg" alt="Mandala Art" className="mandala-intro-image" />
+        <div className="mandala-intro-grid">
+          <div className="mandala-intro-content">
+            <p className="about-text">
+              Mandala is a Sanskrit word that means “circle.” It is a spiritual and ritual symbol representing the universe in Hinduism and Buddhism. Mandalas often feature intricate, symmetrical patterns radiating from a central point, symbolizing unity, harmony, and balance.
+            </p>
+            <p className="about-text">
+              Mandala art is a geometric design that embodies the interconnectedness of life, balance, and meditation. Deeply rooted in various cultures, particularly in Hindu and Buddhist traditions, mandalas are used for spiritual guidance, self-discovery, and meditation. The repetitive and detailed patterns encourage mindfulness and relaxation, making them a powerful tool for focus and inner peace.
+            </p>
+            <p className="about-text">
+              Beyond its religious and spiritual significance, mandala art has gained recognition in modern practices such as art therapy and mindfulness exercises. It is widely used to reduce stress, enhance creativity, and bring tranquility. Additionally, mandalas are now a popular element in contemporary home décor, digital illustrations, and therapeutic coloring books.
+            </p>
+            <p className="about-text">
+              Whether created as hand-drawn sketches, painted masterpieces, or digital art, mandalas continue to inspire and spread positivity, serving as a bridge between ancient traditions and modern artistic expression.
+            </p>
+          </div>
+          <div className="mandala-intro-image-wrap">
+            <img src="/mandala.jpg" alt="Mandala Art" className="mandala-intro-image" />
+          </div>
         </div>
       </section>
 

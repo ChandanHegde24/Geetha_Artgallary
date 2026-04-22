@@ -504,9 +504,9 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .mandala-intro-layout {
+  .mandala-intro-grid {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1.5rem;
   }
 
@@ -1244,15 +1244,25 @@ h2 {
 }
 
 .mandala-intro-layout {
+  display: block;
+}
+
+.mandala-intro-grid {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 3rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .mandala-intro-layout > .section-tag {
-  width: 100%;
-  margin-bottom: 1rem;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.mandala-intro-content {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .mandala-intro-content .about-text {
@@ -1264,6 +1274,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0 0 min(380px, 40%);
 }
 
 .mandala-intro-image {
@@ -2472,6 +2483,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .mandala-intro-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .stores-container {
     grid-template-columns: 1fr;
     gap: 30px;
