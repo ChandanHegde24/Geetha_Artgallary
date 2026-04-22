@@ -569,7 +569,7 @@ h2 {
 .artist-bio-section {
   position: relative;
   isolation: isolate;
-  background-image: url('/homeaboutbg.jpeg');
+  background-image: url('public/homeaboutbg.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
