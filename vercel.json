@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "chmod +x node_modules/.bin/* && npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm ci --legacy-peer-deps"
+  "installCommand": "npm install"
 }
