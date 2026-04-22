@@ -45,7 +45,6 @@ export default function Navbar() {
           <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</NavLink></li>
           <li><NavLink to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</NavLink></li>
           <li><NavLink to="/shop" onClick={() => setIsMenuOpen(false)}>Shop</NavLink></li>
-          <li><NavLink to="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</NavLink></li>
           <li><NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</NavLink></li>
         </ul>
 
