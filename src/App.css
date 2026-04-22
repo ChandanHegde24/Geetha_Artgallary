@@ -506,7 +506,7 @@ h2 {
 
   .mandala-intro-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.5rem;
   }
 
@@ -2484,7 +2484,7 @@ h2 {
 
 @media (max-width: 768px) {
   .mandala-intro-grid {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.5rem;
   }
 
