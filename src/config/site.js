@@ -2,9 +2,9 @@ export const SITE = {
   brandName: "Geeta's Art Gallery",
   whatsappNumber: "918217416352",
   socialLinks: {
-    instagram: "https://instagram.com/",
+    instagram: "https://www.instagram.com/geetas_art_gallery?igsh=djlpcmMydGF4OWNm",
     facebook: "https://facebook.com/",
-    youtube: "https://youtube.com/",
+    youtube: "www.youtube.com/@geetasartgallery",
   },
   storeLocations: [
     {
