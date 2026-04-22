@@ -29,16 +29,6 @@ export default function Navbar() {
           />
         </NavLink>
 
-        <button 
-          className={`hamburger-menu ${isMenuOpen ? "is-open" : ""}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={isMenuOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
 
         <ul className={`nav-links ${isMenuOpen ? "is-open" : ""}`}>
           <li><NavLink to="/" end onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
@@ -108,6 +98,18 @@ export default function Navbar() {
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
               </svg>
             )}
+          </button>
+
+          {/* Hamburger Menu */}
+          <button 
+            className={`hamburger-menu ${isMenuOpen ? "is-open" : ""}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
 
           {/* WhatsApp */}

@@ -94,8 +94,8 @@ export default function Home() {
         </div>
       </section>
       <section className="mandala-info mandala-intro-layout">
+        <p className="section-tag">What is Mandala Art?</p>
         <div className="mandala-intro-content">
-          <p className="section-tag">What is Mandala Art?</p>
           <p className="about-text">
             Mandala is a Sanskrit word that means “circle.” It is a spiritual and ritual symbol representing the universe in Hinduism and Buddhism. Mandalas often feature intricate, symmetrical patterns radiating from a central point, symbolizing unity, harmony, and balance.
           </p>

@@ -505,12 +505,13 @@ h2 {
   }
 
   .mandala-intro-layout {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: 1.5rem;
   }
 
-  .mandala-intro-image {
-    width: min(300px, 100%);
+  .mandala-intro-layout > .section-tag {
+    margin-bottom: 0;
   }
 
   .products {
@@ -731,14 +732,7 @@ h2 {
     gap: 24px;
   }
 
-  .mandala-intro-layout {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 
-  .mandala-intro-image {
-    width: min(350px, 100%);
-  }
 
   .products {
     grid-template-columns: repeat(2, 1fr);
@@ -849,10 +843,7 @@ h2 {
     gap: 28px;
   }
 
-  .mandala-intro-layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
+
 
   .products {
     grid-template-columns: repeat(2, 1fr);
@@ -935,10 +926,6 @@ h2 {
 
   .about-container {
     gap: 36px;
-  }
-
-  .mandala-intro-layout {
-    gap: 3rem;
   }
 
   .stores-container {
@@ -1261,6 +1248,11 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+}
+
+.mandala-intro-layout > .section-tag {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
 }
 
 .mandala-intro-content .about-text {
