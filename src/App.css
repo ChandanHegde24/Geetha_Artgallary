@@ -1837,6 +1837,10 @@ h2 {
     gap: 30px;
   }
 
+  .artist-bio-section {
+    background-attachment: scroll;
+  }
+
   .stores-list {
     gap: 16px;
   }
@@ -2337,6 +2341,10 @@ h2 {
 @media (max-width: 640px) {
   section {
     padding: 72px 6%;
+  }
+
+  .artist-bio-section {
+    background-attachment: scroll;
   }
 
   .navbar {
