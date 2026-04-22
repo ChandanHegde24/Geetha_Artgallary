@@ -4,7 +4,7 @@ export const SITE = {
   socialLinks: {
     instagram: "https://www.instagram.com/geetas_art_gallery?igsh=djlpcmMydGF4OWNm",
     facebook: "https://facebook.com/",
-    youtube: "www.youtube.com/@geetasartgallery",
+    youtube: "https://www.youtube.com/@geetasartgallery",
   },
   storeLocations: [
     {
