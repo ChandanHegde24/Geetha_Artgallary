@@ -75,13 +75,6 @@ export default function Home() {
       <section className="mandala-info artist-bio-section">
         <div className="artist-bio-content">
           <h2>Meet Geeta Bhat – A Passionate Mandala Artist</h2>
-          <p className="about-text-kannada">
-            ಮಂಡಲ ಆರ್ಟ್ ಎನ್ನುವ ಈ ಕಲಾಪ್ರಕಾರಕ್ಕೆ ಗೀತಾ ಭಟ್ ಇವರು ಕಾಲಿಟ್ಟಿದ್ದು ಹವ್ಯಾಸಿ ಕಲಾವಿದೆಯಾಗಿ. ಯಾರೊಬ್ಬರಿಂದಲೂ ಕಲಿಯದೆ ತಾವೇ ಸ್ವತಃ ಕಲಿತು ಈ ಮಟ್ಟಕ್ಕೆ ಬೆಳೆದಿದ್ದಾರೆಂದರೆ ಅದು ಕಲೆಯ ಬಗೆಗಿನ ಅವರ ಪ್ರೀತಿ ಹಾಗೂ ಸಮರ್ಪಣೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. </p>
-          <p className="about-text-kannada">  
-            ಮಂಡಲ ಆರ್ಟ್ ಮಾನಸಿಕ ಸಮತೋಲನ, ಸಾಮರಸ್ಯ ಮತ್ತು ಆಂತರಿಕ ಶಾಂತಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತವೆ. ಪ್ರತಿಯೊಂದು ಬಣ್ಣಕ್ಕೂ ಒಂದೊಂದು ಕಥೆಯಿದೆ, ಹಾಗೆಯೇ ಪ್ರತಿಯೊಂದು ಚಿತ್ರವೂ ಒಂದು ವಿಶಿಷ್ಟ ಕಥೆಯನ್ನು ಹೇಳುತ್ತದೆ. </p> 
-          <p className="about-text-kannada">
-            ಗೀತಾ ಅವರ ಕೆಲಸವು ಯುಕೆ, ಯುಎಸ್ ಮತ್ತು ಆಸ್ಟ್ರೇಲಿಯಾ ಸೇರಿದಂತೆ ವಿಶ್ವದಾದ್ಯಂತದ ಕಲಾ ಪ್ರೇಮಿಗಳಿಂದ ಮೆಚ್ಚುಗೆಯನ್ನು ಗಳಿಸಿದೆ. ಮನೆಯಲ್ಲಿ ಅಲಂಕಾರಕ್ಕಾಗಿ ಜೊತೆಗೆ ಆಧ್ಯಾತ್ಮಿಕ ಟಚ್ ಇರಲಿ ಎಂದು ಬಯಸುವವರಿಗಂತೂ ಇದು ಖಂಡಿತವಾಗಿಯೂ ಇಷ್ಟವಾಗುತ್ತದೆ. ಸಕಾರಾತ್ಮಕತೆ ಮತ್ತು ಪ್ರಶಾಂತತೆಯನ್ನು ಹೆಚ್ಚಿಸುವ ಈ ಕೆಲಯಲ್ಲಿ ತೊಡಗಿಕೊಂಡಿರುವ ಗೀತಾ ಭಟ್ ಇವರ ಕಾರ್ಯವನ್ನು ನೀವೂ ಪ್ರೋತ್ಸಾಹಿಸಿ, ಅವರ ಉತ್ಸಾಹವನ್ನು ಇಮ್ಮಡಿಗೊಳಿಸಿ.
-          </p>
           <p className="about-text">
             Geeta Bhat, a dedicated housewife, discovered her passion for mandala art eight years ago as a creative hobby. Over time, her deep connection with intricate patterns and sacred geometry transformed her into a professional mandala artist. Today, her mesmerizing artwork not only fosters mindfulness and creativity but also serves as a source of inspiration for art lovers worldwide.
           </p>
@@ -90,6 +83,13 @@ export default function Home() {
           </p>
           <p className="about-text">
             With a strong presence in the global art community, Geeta's colorful and intricate mandalas have reached art enthusiasts in the UK, US, Australia, and beyond. Each of her creations reflects her passion, precision, and the transformative power of mandala art. Whether you are looking for custom-designed mandalas, art prints, or personalized creations, Geeta's work brings a touch of mindfulness and serenity to every space.
+          </p>
+          <p className="about-text-kannada">
+            ಮಂಡಲ ಆರ್ಟ್ ಎನ್ನುವ ಈ ಕಲಾಪ್ರಕಾರಕ್ಕೆ ಗೀತಾ ಭಟ್ ಇವರು ಕಾಲಿಟ್ಟಿದ್ದು ಹವ್ಯಾಸಿ ಕಲಾವಿದೆಯಾಗಿ. ಯಾರೊಬ್ಬರಿಂದಲೂ ಕಲಿಯದೆ ತಾವೇ ಸ್ವತಃ ಕಲಿತು ಈ ಮಟ್ಟಕ್ಕೆ ಬೆಳೆದಿದ್ದಾರೆಂದರೆ ಅದು ಕಲೆಯ ಬಗೆಗಿನ ಅವರ ಪ್ರೀತಿ ಹಾಗೂ ಸಮರ್ಪಣೆಯನ್ನು ತೋರಿಸುತ್ತದೆ. </p>
+          <p className="about-text-kannada">  
+            ಮಂಡಲ ಆರ್ಟ್ ಮಾನಸಿಕ ಸಮತೋಲನ, ಸಾಮರಸ್ಯ ಮತ್ತು ಆಂತರಿಕ ಶಾಂತಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತವೆ. ಪ್ರತಿಯೊಂದು ಬಣ್ಣಕ್ಕೂ ಒಂದೊಂದು ಕಥೆಯಿದೆ, ಹಾಗೆಯೇ ಪ್ರತಿಯೊಂದು ಚಿತ್ರವೂ ಒಂದು ವಿಶಿಷ್ಟ ಕಥೆಯನ್ನು ಹೇಳುತ್ತದೆ. </p> 
+          <p className="about-text-kannada">
+            ಗೀತಾ ಅವರ ಕೆಲಸವು ಯುಕೆ, ಯುಎಸ್ ಮತ್ತು ಆಸ್ಟ್ರೇಲಿಯಾ ಸೇರಿದಂತೆ ವಿಶ್ವದಾದ್ಯಂತದ ಕಲಾ ಪ್ರೇಮಿಗಳಿಂದ ಮೆಚ್ಚುಗೆಯನ್ನು ಗಳಿಸಿದೆ. ಮನೆಯಲ್ಲಿ ಅಲಂಕಾರಕ್ಕಾಗಿ ಜೊತೆಗೆ ಆಧ್ಯಾತ್ಮಿಕ ಟಚ್ ಇರಲಿ ಎಂದು ಬಯಸುವವರಿಗಂತೂ ಇದು ಖಂಡಿತವಾಗಿಯೂ ಇಷ್ಟವಾಗುತ್ತದೆ. ಸಕಾರಾತ್ಮಕತೆ ಮತ್ತು ಪ್ರಶಾಂತತೆಯನ್ನು ಹೆಚ್ಚಿಸುವ ಈ ಕೆಲಯಲ್ಲಿ ತೊಡಗಿಕೊಂಡಿರುವ ಗೀತಾ ಭಟ್ ಇವರ ಕಾರ್ಯವನ್ನು ನೀವೂ ಪ್ರೋತ್ಸಾಹಿಸಿ, ಅವರ ಉತ್ಸಾಹವನ್ನು ಇಮ್ಮಡಿಗೊಳಿಸಿ.
           </p>
         </div>
       </section>

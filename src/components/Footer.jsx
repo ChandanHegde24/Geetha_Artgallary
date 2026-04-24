@@ -63,15 +63,6 @@ export default function Footer() {
           <Link to="/contact" className="footer-link">Contact</Link>
         </div>
         <div>
-          <h3>Policy Info</h3>
-          <p>Privacy Policy</p>
-          <p>Terms of Sale</p>
-          <p>Customer Service</p>
-          <p>Delivery Information</p>
-          <p>Payments</p>
-          <p>FAQ</p>
-        </div>
-        <div>
           <h3>Follow Us</h3>
           <div className="social-links footer-social-links">
             {socialItems.map((item) => (
