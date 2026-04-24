@@ -2,13 +2,16 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { SITE } from "../config/site";
 import { useTheme } from "../context/ThemeContext";
+import { useCart } from "../context/CartContext";
 import logo from "/logo.png";
 
 export default function Navbar() {
   const { isDark, toggleTheme } = useTheme();
+  const { getCartItemsCount } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+  const cartCount = getCartItemsCount();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -71,7 +74,7 @@ export default function Navbar() {
               <circle cx="20" cy="21" r="1" />
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
             </svg>
-            <span className="cart-count">0</span>
+            {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
           </NavLink>
 
           {/* Theme Toggle */}

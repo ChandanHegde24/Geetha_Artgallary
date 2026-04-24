@@ -1,0 +1,353 @@
+/* Cart Section */
+.cart-section {
+  min-height: 80vh;
+  padding: 60px 20px;
+  margin-top: 80px;
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--text-color, #333);
+}
+
+/* Empty Cart */
+.empty-cart {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-secondary, #f5f5f5);
+  border-radius: 8px;
+}
+
+.empty-cart p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-color, #666);
+}
+
+/* Cart Content Layout */
+.cart-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Cart Items */
+.cart-items {
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  background: var(--bg-tertiary, #e8e8e8);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-color, #333);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color, #e0e0e0);
+  align-items: center;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-details h4 {
+  margin: 0 0 5px 0;
+  color: var(--text-color, #333);
+  font-size: 1rem;
+}
+
+.item-eta {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #999);
+  font-style: italic;
+}
+
+.item-price {
+  font-weight: 600;
+  color: var(--primary-color, #8b4513);
+}
+
+.item-subtotal {
+  font-weight: 600;
+  color: var(--primary-color, #8b4513);
+}
+
+/* Quantity Control */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.qty-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: var(--bg-primary, white);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--primary-color, #8b4513);
+  transition: background 0.2s;
+}
+
+.qty-btn:hover {
+  background: var(--bg-tertiary, #f0f0f0);
+}
+
+.qty-input {
+  width: 50px;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.qty-input:focus {
+  outline: none;
+}
+
+/* Remove Button */
+.remove-btn {
+  padding: 6px 12px;
+  border: 1px solid #dc3545;
+  background: transparent;
+  color: #dc3545;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.remove-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Cart Summary */
+.cart-summary {
+  position: sticky;
+  top: 100px;
+}
+
+.summary-card {
+  background: var(--bg-secondary, #f9f9f9);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  color: var(--text-color, #333);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color, #e0e0e0);
+  font-size: 0.95rem;
+}
+
+.summary-row.note {
+  flex-direction: column;
+  gap: 5px;
+  color: var(--text-secondary, #999);
+  font-size: 0.85rem;
+  border-bottom: none;
+}
+
+.summary-row.note span:last-child {
+  font-style: italic;
+}
+
+.summary-row.total {
+  border-bottom: none;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color, #8b4513);
+}
+
+/* Buttons */
+.checkout-btn,
+.continue-shopping,
+.clear-cart {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.btn-success:hover {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: var(--bg-tertiary, #e8e8e8);
+  color: var(--text-color, #333);
+  margin-bottom: 12px;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-quaternary, #d0d0d0);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+  margin-bottom: 0;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-header {
+    display: none;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    position: relative;
+  }
+
+  .cart-item::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-secondary, #999);
+  }
+
+  .item-details {
+    grid-column: 1;
+  }
+
+  .item-price::before {
+    content: "Price: ";
+    font-weight: 600;
+    color: var(--text-secondary, #999);
+    margin-right: 5px;
+  }
+
+  .item-subtotal::before {
+    content: "Subtotal: ";
+    font-weight: 600;
+    color: var(--text-secondary, #999);
+    margin-right: 5px;
+  }
+
+  .quantity-control {
+    margin: 10px 0;
+  }
+
+  .summary-card {
+    position: static;
+  }
+
+  .cart-section {
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+
+  .cart-container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .cart-section {
+  background: #1a1a1a;
+}
+
+[data-theme="dark"] .cart-items,
+[data-theme="dark"] .summary-card {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+[data-theme="dark"] .cart-header {
+  background: #3a3a3a;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .cart-item {
+  border-color: #3a3a3a;
+}
+
+[data-theme="dark"] .item-details h4,
+[data-theme="dark"] .summary-card h3,
+[data-theme="dark"] .cart-container h2 {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .item-eta {
+  color: #999;
+}
+
+[data-theme="dark"] .qty-btn {
+  background: #3a3a3a;
+  color: #daa520;
+}
+
+[data-theme="dark"] .qty-btn:hover {
+  background: #4a4a4a;
+}
+
+[data-theme="dark"] .qty-input {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .summary-row {
+  border-color: #3a3a3a;
+}
+
+[data-theme="dark"] .summary-row.note {
+  color: #999;
+}

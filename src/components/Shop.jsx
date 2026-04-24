@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SITE } from "../config/site";
+import { useCart } from "../context/CartContext";
 
 const products = [
   {
@@ -224,12 +225,14 @@ export default function Shop({
   maxProducts,
   productsData
 }) {
+  const { addToCart } = useCart();
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedSort, setSelectedSort] = useState("default");
   const [priceRange, setPriceRange] = useState([0, 5000]);
   const [zoomImage, setZoomImage] = useState(null);
   const [zoomImageAlt, setZoomImageAlt] = useState("");
   const [zoomLevel, setZoomLevel] = useState(1);
+  const [addedToCart, setAddedToCart] = useState(null);
   const allProducts = Array.isArray(productsData) && productsData.length > 0 ? productsData : products;
   
   const filteredProducts = allProducts.filter((product) => {
@@ -422,14 +425,27 @@ export default function Shop({
                 <p>{p.price}</p>
                 <span className="eta">{p.eta}</span>
               </div>
-              <a
-                className="buy-btn"
-                href={`https://wa.me/${SITE.whatsappNumber}?text=Hi%20Geeta%2C%20I%20want%20to%20buy%20${encodeURIComponent(p.name)}%20for%20${encodeURIComponent(p.price)}.`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Buy on WhatsApp
-              </a>
+              <div className="product-actions">
+                <button
+                  className={`add-to-cart-btn ${addedToCart === i ? 'added' : ''}`}
+                  onClick={() => {
+                    addToCart(p);
+                    setAddedToCart(i);
+                    setTimeout(() => setAddedToCart(null), 2000);
+                  }}
+                  aria-label={`Add ${p.name} to cart`}
+                >
+                  {addedToCart === i ? '✓ Added to Cart' : 'Add to Cart'}
+                </button>
+                <a
+                  className="buy-btn"
+                  href={`https://wa.me/${SITE.whatsappNumber}?text=Hi%20Geeta%2C%20I%20want%20to%20buy%20${encodeURIComponent(p.name)}%20for%20${encodeURIComponent(p.price)}.`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Buy on WhatsApp
+                </a>
+              </div>
             </article>
           ))}
         </div>
