@@ -225,12 +225,17 @@
 
 .btn-secondary {
   background: var(--bg-tertiary, #e8e8e8);
-  color: var(--text-color, #333);
+  color: var(--text-color, #333) !important;
   margin-bottom: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-secondary:hover {
   background: var(--bg-quaternary, #d0d0d0);
+  color: var(--text-color, #333) !important;
 }
 
 .btn-danger {
@@ -350,4 +355,15 @@
 
 [data-theme="dark"] .summary-row.note {
   color: #999;
+}
+
+[data-theme="dark"] .btn-secondary {
+  background: #3a3a3a;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background: #4a4a4a;
+  color: #ffffff !important;
 }
