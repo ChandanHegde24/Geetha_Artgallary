@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Hero from "./components/Hero";
+import PremiumCarousel from "./components/PremiumCarousel";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import Home from "./components/Home";
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={
               <>
+                <PremiumCarousel />
                 <Hero />
                 <Home />
               </>
