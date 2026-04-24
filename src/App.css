@@ -1098,6 +1098,19 @@ h2 {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background-image: url("/rainbow mirror.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #111827;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.5), rgba(17, 24, 39, 0.68));
+  z-index: 1;
 }
 
 .hero-bg-slider {
@@ -2659,9 +2672,60 @@ h2 {
 .premium-carousel-section::after {
   content: "";
   position: absolute;
+  z-index: 0;
   border-radius: 50%;
   pointer-events: none;
   filter: blur(22px);
+}
+
+.premium-bg-slider {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.premium-bg-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1.2s ease, transform 5s ease;
+}
+
+.premium-bg-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.premium-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(31, 41, 55, 0.44), rgba(31, 41, 55, 0.68));
+  z-index: 1;
+}
+
+.premium-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.premium-glow-left {
+  background: rgba(212, 175, 55, 0.38);
+  top: 8%;
+  left: -100px;
+}
+
+.premium-glow-right {
+  background: rgba(59, 130, 246, 0.3);
+  right: -90px;
+  bottom: 15%;
 }
 
 .premium-carousel-section::before {
@@ -2690,7 +2754,7 @@ h2 {
 
 .premium-carousel-shell {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 1480px;
   margin: 0 auto;
 }

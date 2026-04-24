@@ -41,6 +41,12 @@ const featuredProducts = [
   },
 ];
 
+const premiumBackgroundSlides = [
+  "/hero1.jpg",
+  "/hero2.jpg",
+  "/hero3.jpg",
+];
+
 export default function PremiumCarousel() {
   const baseCount = featuredProducts.length;
   const loopedProducts = useMemo(
@@ -49,6 +55,7 @@ export default function PremiumCarousel() {
   );
   const [currentIndex, setCurrentIndex] = useState(baseCount);
   const [animate, setAnimate] = useState(true);
+  const [activeBgSlide, setActiveBgSlide] = useState(0);
 
   const goToNext = () => {
     setAnimate(true);
@@ -72,6 +79,14 @@ export default function PremiumCarousel() {
     }, 3200);
 
     return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const bgTimer = window.setInterval(() => {
+      setActiveBgSlide((prev) => (prev + 1) % premiumBackgroundSlides.length);
+    }, 3500);
+
+    return () => window.clearInterval(bgTimer);
   }, []);
 
   useEffect(() => {
@@ -120,6 +135,19 @@ export default function PremiumCarousel() {
 
   return (
     <section className="premium-carousel-section" aria-labelledby="premium-carousel-title">
+      <div className="premium-bg-slider" aria-hidden="true">
+        {premiumBackgroundSlides.map((image, index) => (
+          <div
+            key={image}
+            className={`premium-bg-slide ${index === activeBgSlide ? "is-active" : ""}`}
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        ))}
+      </div>
+      <div className="premium-bg-overlay" />
+      <div className="premium-glow premium-glow-left" />
+      <div className="premium-glow premium-glow-right" />
+
       <div className="premium-carousel-shell">
         <div className="premium-carousel-stage">
           <button
