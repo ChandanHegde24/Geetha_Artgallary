@@ -9,6 +9,7 @@ export default function Hero() {
       aria-roledescription="carousel"
       aria-label="Featured artwork"
     >
+      <div className="hero-rotating-circle"></div>
       <div className="hero-content">
         <p className="hero-tag">{SITE.brandName}</p>
         <h1>Explore the world of Mandala Art with Geeta Bhat and experience the harmony of colors, patterns, and emotions.</h1>
