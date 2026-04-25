@@ -490,7 +490,8 @@ h2 {
   }
 
   .whatsapp-chip {
-    display: none;
+    padding: 10px 16px;
+    font-size: 0.85rem;
   }
 
   .navbar-icon-link {
@@ -514,6 +515,7 @@ h2 {
   .hero-actions {
     flex-direction: column;
     gap: 12px;
+    width: 100%;
   }
 
   .btn {
@@ -1098,8 +1100,8 @@ h2 {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background-image: url("/rainbow mirror.jpg");
-  background-size: contain;
+  background-image: url("/Skill.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #111827;
@@ -1160,31 +1162,6 @@ h2 {
   background: rgba(59, 130, 246, 0.35);
   right: -90px;
   bottom: 15%;
-}
-
-.hero-rotating-circle {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top: 3px solid rgba(212, 175, 55, 0.8);
-  border-right: 3px solid rgba(212, 175, 55, 0.6);
-  border-bottom: 3px solid rgba(212, 175, 55, 0.4);
-  z-index: 0;
-  animation: rotateCircle 8s linear infinite;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes rotateCircle {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 
 .hero-content {
@@ -2833,6 +2810,14 @@ h2 {
 
 .premium-carousel-track.is-snap {
   transition: none;
+}
+
+.premium-circular-carousel {
+  display: none;
+}
+
+.premium-circular-container {
+  display: none;
 }
 
 .premium-product-card {

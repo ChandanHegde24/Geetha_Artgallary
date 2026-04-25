@@ -114,18 +114,7 @@ export default function Navbar() {
             <span></span>
             <span></span>
           </button>
-
-          {/* WhatsApp */}
-          <a
-            className="whatsapp-chip"
-            href={`https://wa.me/${SITE.whatsappNumber}?text=Hi%20Geeta%2C%20I%20want%20to%20order%20mandala%20art.`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            WhatsApp
-          </a>
         </div>
-
     </nav>
   );
 }
