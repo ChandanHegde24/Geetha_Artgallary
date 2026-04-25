@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { SITE } from "../config/site";
 import { useTheme } from "../context/ThemeContext";
 import { useCart } from "../context/CartContext";
-import logo from "/logo.png";
+import logo from "/logo1.png";
 
 export default function Navbar() {
   const { isDark, toggleTheme } = useTheme();
