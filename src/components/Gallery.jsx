@@ -4,9 +4,10 @@ const galleryImages = [
   "gallery/Kageri with Geeta 2.jpg.jpeg",
   "gallery/Pandith with Geeta.jpg.jpeg",
   "gallery/Raghu with Geeta 1.jpg.jpeg",
-  "gallery/B Jayashree with Geeta 1.jpg.jpeg",
+  "gallery/B Jayashree with Geeta.jpg",
   "gallery/exhibition.jpg",
   "gallery/warli and mandala fusion.jpg",
+  "gallery/gift.jpg",
 ];
 
 export default function Gallery() {
