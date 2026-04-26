@@ -45,8 +45,8 @@ export default function Footer() {
         <div>
           <h3>{SITE.brandName}</h3>
           <p>Geeta's Art Gallery, Honnavara, Uttara Kannada</p>
-          <p>+91 82174 16352</p>
-          <p>info@geetasartgallery.com</p>
+          <p><a href="tel:+91 82174 16352">+91 82174 16352</a></p>
+          <p><a href="mailto:info@geetasartgallery.com">info@geetasartgallery.com</a></p>
           <p>Mon - Fri / 9:00 AM - 6:00 PM</p>
         </div>
         <div>
