@@ -71,8 +71,18 @@ export default function Cart() {
               return (
                 <div key={index} className="cart-item">
                   <div className="item-details">
-                    <h4>{item.name}</h4>
-                    <span className="item-eta">{item.eta}</span>
+                    <div className="item-meta">
+                      <h4>{item.name}</h4>
+                      <span className="item-eta">{item.eta}</span>
+                    </div>
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="cart-item-image"
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                   <span className="item-price">{item.price}</span>
                   <div className="quantity-control">
