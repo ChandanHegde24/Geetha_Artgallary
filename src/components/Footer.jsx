@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="footer-copy">© 2026 <a href="https://www.linkedin.com/in/code-stack" target="_blank" rel="noreferrer">CodeStack.</a> All Rights Reserved.</p>
+      <p className="footer-copy"> &copy; {new Date().getFullYear()} <a href="https://www.linkedin.com/in/code-stack" target="_blank" rel="noreferrer">CodeStack.</a> All Rights Reserved.</p>
     </footer>
   );
 }
