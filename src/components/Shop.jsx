@@ -6,10 +6,11 @@ import { useCart } from "../context/CartContext";
 const products = [
   {
     name: "Budhha Mandala",
-    price: "₹ 4,000.00",
+    price: "₹ 7,000.00",
     eta: "Ready to order",
     category: "Wall Painting",
     image: "/img/buddha.jpg",
+    sizes: ["30 inch"],
   },
   {
     name: "Wall Painting With House Name",
@@ -62,35 +63,29 @@ const products = [
   },
   {
     name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
+    price: "₹ 2,000.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame1.jpg",
   },
-  {
-    name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
-    eta: "Customizable",
-    category: ["Customize", "Wall Painting"],
-    image: "/img/photo frame2.jpg",
-  },
    {
     name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
+    price: "₹ 2,000.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame7.jpg",
   },
    {
     name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
+    price: "₹ 2,500.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame8.jpg",
+    sizes: ["20 inch"],
   },
   {
     name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
+    price: "₹ 2,000.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame3.jpg",
@@ -104,10 +99,10 @@ const products = [
   },
   {
     name: "Mandala Photo Frame",
-    price: "₹ 1,800.00",
+    price: "₹ 2,000.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
-    image: "/img/photo frame 5.jpg",
+    image: "/img/photo frame2.jpg",
   },
   {
     name: "Mandala Photo Frame",
@@ -118,7 +113,7 @@ const products = [
   },
   {
     name: "Om Mandala",
-    price: "₹ 1,500.00",
+    price: "₹ 2,000.00",
     eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/om.jpg",
@@ -183,7 +178,7 @@ const products = [
   },
   {
     name: "Pen Stand",
-    price: "₹ 200.00",
+    price: "₹ 350.00",
     eta: "Ready to order",
     category: ["Gifting and Personal use", "Decor Items"],
     image: "/img/pen stand.jpg",
@@ -447,7 +442,7 @@ export default function Shop({
   const { addToCart } = useCart();
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedSort, setSelectedSort] = useState("default");
-  const [priceRange, setPriceRange] = useState([0, 5000]);
+  const [priceRange, setPriceRange] = useState([0, 10000]);
   const [zoomImage, setZoomImage] = useState(null);
   const [zoomImageAlt, setZoomImageAlt] = useState("");
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -593,7 +588,7 @@ export default function Shop({
                 <input
                   type="number"
                   min="0"
-                  max="5000"
+                  max="10000"
                   value={priceRange[0]}
                   onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
                   placeholder="Min"
@@ -602,7 +597,7 @@ export default function Shop({
                 <input
                   type="number"
                   min="0"
-                  max="5000"
+                  max="10000"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                   placeholder="Max"
@@ -612,7 +607,7 @@ export default function Shop({
                 id="price-range"
                 type="range"
                 min="0"
-                max="5000"
+                max="10000"
                 value={priceRange[1]}
                 onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                 className="price-slider"
@@ -640,6 +635,15 @@ export default function Shop({
                 </div>
               )}
               <h3>{p.name}</h3>
+              {p.sizes && p.sizes.length > 0 && (
+                <div className="product-sizes">
+                  <div className="sizes-list">
+                    {p.sizes.map((size, idx) => (
+                      <span key={idx} className="size-tag">Size: {size}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="product-meta">
                 <p>{p.price}</p>
                 <span className="eta">{p.eta}</span>
