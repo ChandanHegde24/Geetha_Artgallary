@@ -53,7 +53,6 @@ export default function Cart() {
     <section className="cart-section">
       <div className="cart-container">
         <h2>Shopping Cart</h2>
-        
         <div className="cart-content">
           <div className="cart-items">
             <div className="cart-header">
