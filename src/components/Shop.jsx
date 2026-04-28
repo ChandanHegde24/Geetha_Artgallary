@@ -666,7 +666,7 @@ export default function Shop({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Buy on WhatsApp
+                  Order on WhatsApp
                 </a>
               </div>
             </article>

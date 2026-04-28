@@ -3440,9 +3440,13 @@ h2 {
 }
 
 [data-theme="dark"] .product-image-placeholder,
-[data-theme="dark"] .eta,
+[data-theme="dark"] .eta {
+  background: var(--dm-soft-panel-bg);
+}
+
 [data-theme="dark"] .size-tag {
   background: var(--dm-soft-panel-bg);
+  color: wheat;
 }
 
 [data-theme="dark"] .product-image-placeholder,
