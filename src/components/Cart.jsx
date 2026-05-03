@@ -13,22 +13,33 @@ export default function Cart() {
 
     let message = "Hi Geeta,\n\nI would like to order the following items:\n\n";
     
+    // Collect all images for the preview section
+    const productImages = [];
+    
     cart.forEach((item) => {
       const price = parseFloat(item.price.replace(/[₹,\s]/g, ''));
       const itemTotal = price * item.quantity;
-      message += `• ${item.name}\n  Quantity: ${item.quantity}\n  Price per item: ${item.price}\n  Subtotal: ₹${itemTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n`;
+      message += `• ${item.name}\n  Quantity: ${item.quantity}\n  Price per item: ${item.price}\n  Subtotal: ₹${itemTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n\n`;
       
-      // Add image URL if available
+      // Store image URL if available
       if (item.image) {
         const imageUrl = new URL(item.image, window.location.origin).href;
-        message += `  Image: ${imageUrl}\n`;
+        productImages.push({ name: item.name, url: imageUrl });
       }
-      
-      message += "\n";
     });
 
     const totalPrice = getTotalPrice();
-    message += `Total Amount: ₹${totalPrice.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n\nPlease confirm availability and delivery details.`;
+    message += `Total Amount: ₹${totalPrice.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n`;
+    
+    // Add product images preview section
+    if (productImages.length > 0) {
+      message += `\n--- ORDER PREVIEW (Product Images) ---\n`;
+      productImages.forEach((product, index) => {
+        message += `\n${index + 1}. ${product.name}\n${product.url}`;
+      });
+    }
+    
+    message += `\n\nPlease confirm availability and delivery details.`;
     
     return message;
   };
