@@ -349,6 +349,123 @@
   color: #e0e0e0;
 }
 
+/* Order Preview Section */
+.order-preview-section {
+  margin-top: 50px;
+  padding: 30px;
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+  border: 2px solid var(--border-color, #e0e0e0);
+}
+
+.order-preview-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  color: var(--text-color, #333);
+  text-align: center;
+}
+
+.order-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.order-image-card {
+  background: var(--bg-primary, white);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color, #ddd);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-preview-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.order-image-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.order-image-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-color, #333);
+  line-height: 1.2;
+}
+
+.image-quantity {
+  margin: 5px 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #666);
+}
+
+.image-price {
+  margin: 5px 0 0 0;
+  font-weight: 600;
+  color: var(--primary-color, #8b4513);
+  font-size: 0.9rem;
+}
+
+/* Dark Mode for Order Preview */
+[data-theme="dark"] .order-preview-section {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+[data-theme="dark"] .order-image-card {
+  background: #3a3a3a;
+  border-color: #555;
+}
+
+[data-theme="dark"] .order-image-info {
+  background: #3a3a3a;
+}
+
+[data-theme="dark"] .order-image-info h4,
+[data-theme="dark"] .image-quantity {
+  color: #e0e0e0;
+}
+
+/* Responsive for Order Preview */
+@media (max-width: 768px) {
+  .order-preview-section {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .order-images-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .order-preview-image {
+    height: 150px;
+  }
+
+  .order-image-info {
+    padding: 10px;
+  }
+
+  .order-image-info h4 {
+    font-size: 0.85rem;
+  }
+
+  .image-quantity,
+  .image-price {
+    font-size: 0.75rem;
+  }
+}
+
 [data-theme="dark"] .cart-item {
   border-color: #3a3a3a;
 }

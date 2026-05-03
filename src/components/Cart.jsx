@@ -16,7 +16,15 @@ export default function Cart() {
     cart.forEach((item) => {
       const price = parseFloat(item.price.replace(/[₹,\s]/g, ''));
       const itemTotal = price * item.quantity;
-      message += `• ${item.name}\n  Quantity: ${item.quantity}\n  Price per item: ${item.price}\n  Subtotal: ₹${itemTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n\n`;
+      message += `• ${item.name}\n  Quantity: ${item.quantity}\n  Price per item: ${item.price}\n  Subtotal: ₹${itemTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}\n`;
+      
+      // Add image URL if available
+      if (item.image) {
+        const imageUrl = new URL(item.image, window.location.origin).href;
+        message += `  Image: ${imageUrl}\n`;
+      }
+      
+      message += "\n";
     });
 
     const totalPrice = getTotalPrice();
@@ -165,6 +173,30 @@ export default function Cart() {
                 Clear Cart
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* Order Preview Section with Images */}
+        <div className="order-preview-section">
+          <h3>Your Order Preview</h3>
+          <div className="order-images-grid">
+            {cart.map((item, index) => (
+              <div key={index} className="order-image-card">
+                {item.image && (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="order-preview-image"
+                    loading="lazy"
+                  />
+                )}
+                <div className="order-image-info">
+                  <h4>{item.name}</h4>
+                  <p className="image-quantity">Qty: {item.quantity}</p>
+                  <p className="image-price">{item.price}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
