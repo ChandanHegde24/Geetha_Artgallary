@@ -133,6 +133,16 @@ export default function PremiumCarousel() {
     wrap.style.setProperty("--pointer-y", "0.5");
   };
 
+  const getProductWhatsAppLink = (product) => {
+    const imageUrl = product.image ? new URL(product.image, window.location.origin).href : "";
+    const messageLines = [
+      `Hi Geeta, I want to buy ${product.name} for ${product.price}.`,
+    ];
+    if (imageUrl) messageLines.push(imageUrl);
+    const message = messageLines.join("\n");
+    return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <section className="premium-carousel-section" aria-labelledby="premium-carousel-title">
       <div className="premium-bg-slider" aria-hidden="true">
@@ -205,11 +215,11 @@ export default function PremiumCarousel() {
                       </div>
                       <a
                         className="premium-product-cta"
-                        href={`https://wa.me/${SITE.whatsappNumber}?text=Hi%20Geeta%2C%20I%20want%20to%20buy%20${encodeURIComponent(product.name)}%20for%20${encodeURIComponent(product.price)}.`}
+                        href={getProductWhatsAppLink(product)}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Buy on WhatsApp
+                        Order on WhatsApp
                       </a>
                     </div>
                   </article>

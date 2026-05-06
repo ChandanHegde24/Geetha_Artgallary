@@ -517,6 +517,16 @@ export default function Shop({
     setZoomLevel(1);
   };
 
+  const getProductWhatsAppLink = (product) => {
+    const imageUrl = product.image ? new URL(product.image, window.location.origin).href : "";
+    const messageLines = [
+      `Hi Geeta, I want to buy ${product.name} for ${product.price}.`,
+    ];
+    if (imageUrl) messageLines.push(imageUrl);
+    const message = messageLines.join('\n');
+    return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -662,7 +672,7 @@ export default function Shop({
                 </button>
                 <a
                   className="buy-btn"
-                  href={`https://wa.me/${SITE.whatsappNumber}?text=Hi%20Geeta%2C%20I%20want%20to%20buy%20${encodeURIComponent(p.name)}%20for%20${encodeURIComponent(p.price)}.`}
+                  href={getProductWhatsAppLink(p)}
                   target="_blank"
                   rel="noreferrer"
                 >

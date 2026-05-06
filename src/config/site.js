@@ -1,6 +1,6 @@
 export const SITE = {
   brandName: "Geeta's Art Gallery",
-  whatsappNumber: "918217416352",
+  whatsappNumber: "918088653820",
   socialLinks: {
     instagram: "https://www.instagram.com/geetas_art_gallery?igsh=djlpcmMydGF4OWNm",
     facebook: "https://facebook.com/",

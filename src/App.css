@@ -3533,3 +3533,30 @@ h2 {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* Mobile CTA fit fixes for long button labels */
+@media (max-width: 768px) {
+  .hero-actions {
+    align-items: center;
+  }
+
+  .hero-actions .btn,
+  .hero-actions .whatsapp-chip,
+  .shop-view-all-container .btn,
+  .premium-carousel-bottom-action .btn {
+    width: auto;
+    min-width: 0;
+    max-width: min(92vw, 280px);
+    padding: 10px 16px;
+    font-size: 0.86rem;
+    display: inline-flex;
+    justify-content: center;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero-actions .whatsapp-chip {
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
