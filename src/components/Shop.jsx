@@ -54,10 +54,10 @@ const products = [
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame.jpg",
   },
-   {
+  {
     name: "Mandala Photo Frame",
     price: "₹ 1,800.00",
-    eta: "Customizable",z
+    eta: "Customizable",
     category: ["Customize", "Wall Painting"],
     image: "/img/photo frame9.jpg",
   },
