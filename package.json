@@ -1,7 +1,7 @@
 {
   "name": "geetha-art-gallery",
+  "private": true,
   "version": "1.0.0",
-  "description": "Art Gallery Web Application",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-  
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.17.0"
   },
   "devDependencies": {
-    
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^8.0.16"
   }
 }
