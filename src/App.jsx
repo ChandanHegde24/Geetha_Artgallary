@@ -9,6 +9,7 @@ import PremiumCarousel from "./components/PremiumCarousel";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import Home from "./components/Home";
+import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
@@ -29,6 +30,7 @@ function App() {
                 <Home />
               </>
             } />
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/about" element={
               <>
                 <About />

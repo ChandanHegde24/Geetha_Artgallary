@@ -57,6 +57,7 @@ export default function Footer() {
         <div>
           <h3>Quick Links</h3>
           <Link to="/" className="footer-link">Home</Link>
+          <Link to="/landing" className="footer-link">Landing</Link>
           <Link to="/about" className="footer-link">About</Link>
           <Link to="/gallery" className="footer-link">Gallery</Link>
           <Link to="/shop" className="footer-link">Shop</Link>
@@ -73,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="footer-copy"> &copy; {new Date().getFullYear()} <a href="https://www.linkedin.com/in/code-stack" target="_blank" rel="noreferrer">CodeStack.</a> All Rights Reserved.</p>
+      <p className="footer-copy"> &copy; {new Date().getFullYear()} <a href="https://www.linkedin.com/in/code-stack" target="_blank" rel="noreferrer">Mitra Technology.</a> All Rights Reserved.</p>
     </footer>
   );
 }

@@ -35,6 +35,7 @@ export default function Navbar() {
 
         <ul className={`nav-links ${isMenuOpen ? "is-open" : ""}`}>
           <li><NavLink to="/" end onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
+          {/* <li><NavLink to="/landing" onClick={() => setIsMenuOpen(false)}>Landing</NavLink></li> */}
           <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</NavLink></li>
           <li><NavLink to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</NavLink></li>
           <li><NavLink to="/shop" onClick={() => setIsMenuOpen(false)}>Shop</NavLink></li>
